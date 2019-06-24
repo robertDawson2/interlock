@@ -1,0 +1,18 @@
+/*----------------------------------------------------
+                                        application
+----------------------------------------------------*/
+#application{
+    background:#666;
+    margin-top: 130px;
+    color:#999;
+}
+#application input, #application select{
+    background:black;
+    color:white;
+}
+#application input:focus, #application select:focus{
+    border-color: red;
+}
+/*----------------------------------------------------
+                                        End application
+----------------------------------------------------*/

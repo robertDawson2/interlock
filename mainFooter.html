@@ -1,0 +1,69 @@
+<!-- End Content-->
+</div>
+<div class="footer-area text-center footer-padding bg-222">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-20px">
+                    <img id="headerLogo" src="images/InterlockLogoV2.png" class="w-logo" alt="img">
+                    <!--
+                        <img alt="img" src="images/white-logo.png">
+                    -->
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/InterlockPavinginc/" class="color-bbb radius-50 mr-5px mb-10px color-fff-hvr bg-orange-hvr transition-3" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/interlock_paving/?hl=en" class="color-bbb radius-50 mr-5px mb-10px color-fff-hvr bg-orange-hvr transition-3" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.yelp.com/biz/interlock-paving-timonium" class="color-bbb radius-50 mr-5px mb-10px color-fff-hvr bg-orange-hvr transition-3" target="_blank"><i class="fa fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <p class="mt-10px mb-0px color-eee">© 2018 Designed by <strong class="color-orange">Net2Sky, LLC</strong> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/lity.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/owl/dist/owl.carousel.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCydQqcZVVPUDk3glGiEdkRTk4IMMbTJUc"></script>
+    <script src="js/map-white.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        if ($(window).width() >= 768 ) {
+            $('video').attr('autoplay', 'autoplay');
+            var videoSecHeight = $('section.welcome-video').height();
+            var numbersSecHeight = $('section.numbers').height();
+            function checkScroll(){
+                var startY = videoSecHeight / 3; //The point where the navbar changes in px
+                if($(window).scrollTop() > startY){
+                    $('.navbar').removeClass("atTop");
+                }else{
+                    $('.navbar').addClass("atTop");
+                }
+            }
+
+            if($('.navbar').length > 0){
+                $(window).on("scroll load resize", function(){
+                    checkScroll();
+                });
+            }
+        }
+    </script>
+    </body>
+</html>

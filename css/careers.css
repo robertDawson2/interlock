@@ -1,0 +1,31 @@
+#careers{
+    margin-top:70px;
+    background:#666;
+}
+
+#careers input{
+    background:black;
+    color:white;
+}
+
+#careers input:hover{
+    color:#cb0000;
+}
+
+#careers input:focus, #careers input:active{
+    border-color: #cb0000;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #careers{
+        margin-top:80px;
+    }
+    
+}
+@media screen and (max-width: 435px) {
+    #careers{
+        margin-top:80px;
+    }
+    
+}

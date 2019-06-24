@@ -1,0 +1,81 @@
+/*----------------------------------------------------
+                                        15-testimonials
+----------------------------------------------------*/
+#testimonials{
+    margin-top: 75px;
+}
+
+.testimonials{
+    background-image: url(../images/img-random.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.testimonials .title-h{
+    margin-bottom:40px;
+}
+
+.testimonials .single-review img{
+    height: 100px;
+    width: 100px;
+    border: 3px solid rgba(240,240,240,0.3);
+}
+
+.testimonials .single-review p{
+    line-height: 1.5em;
+    margin: 0 20%;
+}
+
+.testimonials .owl-theme .owl-nav{
+    margin-top: 0;
+}
+
+.testimonials .owl-theme .owl-nav [class*=owl-]{
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.testimonials .owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: #8c352b
+}
+
+.owl-carousel{
+    display: block !important;
+}
+
+.testimonials .owl-carousel .owl-nav .owl-next{
+    right: 0;
+}
+
+.testimonials .owl-carousel .owl-nav .owl-prev{
+    left: 0;
+}
+
+.testimonials .owl-theme .owl-dots{
+    margin-top: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    background-color: transparent;
+    border: 1px solid #aaa;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #cb0000;
+    border: 1px solid #cb0000;
+}
+
+/*----------------------------------------------------
+                                        End testimonials
+----------------------------------------------------*/
