@@ -1,0 +1,60 @@
+/*----------------------------------------------------
+                                        09-team-area
+----------------------------------------------------*/
+#team{
+    margin-top: 40px;
+    background: #666;
+    padding-top:100px;
+}
+.team-area .team-text .social-icons{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background: linear-gradient(to top, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.3) 80%);
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.3) 80%);
+    opacity: 0;
+}
+
+.team-area .team-text:hover .social-icons{
+    opacity: 1;
+}
+
+.team-area .team-text .social-icons .icons{
+    transform: translateY(100px);
+}
+
+.team-area .team-text:hover .social-icons .icons{
+    transform: translateY(20px);
+}
+
+.team-area .team-text:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.team-area .team-text a .fa{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
+
+.modal-content{margin-top:50px;}
+
+@media screen and (max-width: 1000px) {
+    #team{
+        margin-top:50px;
+    }
+    .modal-content{margin-top:80px;}
+    
+}
+@media screen and (max-width: 435px) {
+    #team{
+        margin-top:80px;
+    }
+    .modal-content{margin-top:80px;}
+    
+}
+/*----------------------------------------------------
+                                        End team-area
+----------------------------------------------------*/
