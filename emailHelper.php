@@ -194,7 +194,7 @@
         $post['phone'] = '';
         $post['email'] = '';
         $post['address1'] = '';
-        $post['address2'] = '';'
+        $post['address2'] = '';
         $post['city'] = '';
         $post['state'] = '';
         $post['zip'] = '';
