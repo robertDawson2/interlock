@@ -1522,7 +1522,7 @@ h6{
     z-index:9999;
     cursor:pointer;
     position:fixed;
-    right:15px;
+    left:15px;
     bottom:10px;
     display: none
 }
@@ -1595,46 +1595,6 @@ h6{
     background: #666;
     color:#fff;
 }
-@media screen and (max-width: 1000px) {
-    .navbar.atTop {
-    background:black;
-    }
-    
-    .navbar-brand{
-        margin-right:0 !important;
-    }
-}
 
-@media screen and (max-width: 800px) {
-    #always-contact .contact {
-        font-size: 90%;
-        padding: 0 5px;
-    }
-    #always-contact {
-        text-align: center;
-        padding: 5px;
-    }
-    .hide-on-mobile {
-        display: none;
-    }
-}
-@media screen and (max-width: 768x) {
-    .navbar-collapse{
-        margin-right:2em;
-    }
-}
+/* chat button */
 
-@media screen and (max-width: 575px) {
-    .navbar-brand{
-        margin-left:25px;
-    }
-}
-@media screen and (max-width: 435px) {
-    .navbar{
-        top: 60px !important;
-    }
-
-    .content{
-        margin-top:55px;
-    }
-}

@@ -3,12 +3,13 @@
 ----------------------------------------------------*/
 #application{
     background:#666;
-    margin-top: 130px;
+    margin-top: 70px;
     color:#999;
+    padding:80px 20px 0px 20px;
 }
 
-#application .errors{
-    color:red;
+#application .error{
+    color:#cb0000;
 }
 
 #application input, #application select{
@@ -16,8 +17,9 @@
     color:white;
 }
 #application input:focus, #application select:focus{
-    border-color: red;
+    border-color: #cb0000;
 }
+
 /*----------------------------------------------------
                                         End application
 ----------------------------------------------------*/

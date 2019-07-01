@@ -20,7 +20,8 @@
             <div class="row mb-20px">
                 <div class="col-md-3 col-lg-4"></div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <a onclick="$('#form1').submit();" ><input class="btn btn-block" name="position1" value="Laborer"></a>
+                    <a onclick="$('#form1').submit();" class="btn btn-block">Laborer</a>
+                    <input type='hidden' name="position1" value="Laborer">
                 </div>
             </div>
         </form>
@@ -28,7 +29,8 @@
             <div class="row mb-20px">
                 <div class="col-md-3 col-lg-4"></div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <a onclick="$('#form2').submit();" ><input class="btn btn-block" name="position2" value="Foreman"></a>
+                    <a onclick="$('#form2').submit();" class="btn btn-block">Foreman</a>
+                    <input type='hidden' name="position2" value="Foreman">
                 </div>
             </div>
         </form>
@@ -36,7 +38,8 @@
             <div class="row mb-20px">
                 <div class="col-md-3 col-lg-4"></div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <a onclick="$('#form3').submit();" ><input class="btn btn-block" name="position3" value="Heavy Machine Operator"></a>
+                    <a onclick="$('#form3').submit();" class="btn btn-block">Heavy Machine Operator</a>
+                    <input type='hidden' name="position3" value="Heavy Machine Operator">
                 </div>
             </div>
         </form>
@@ -44,7 +47,8 @@
             <div class="row mb-20px">
                 <div class="col-md-3 col-lg-4"></div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <a onclick="$('#form4').submit();" ><input class="btn btn-block" name="position4" value="CDL Driver"></a>
+                        <a onclick="$('#form4').submit();" class="btn btn-block">CDL Driver</a>
+                        <input type='hidden' name="position4" value="CDL Driver">
                 </div>
             </div>
         </form>
