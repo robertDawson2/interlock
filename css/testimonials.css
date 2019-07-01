@@ -16,6 +16,9 @@
 .testimonials .title-h{
     margin-bottom:40px;
 }
+.testimonials p{
+    color: white;
+}
 
 .testimonials .single-review img{
     height: 100px;

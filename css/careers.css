@@ -3,29 +3,16 @@
     background:#666;
 }
 
-#careers input{
+#careers a{
     background:black;
     color:white;
 }
 
-#careers input:hover{
+#careers a:hover{
     color:#cb0000;
 }
 
-#careers input:focus, #careers input:active{
+#careers a:focus, #careers a:active{
     border-color: #cb0000;
     box-shadow: none;
-}
-
-@media screen and (max-width: 1000px) {
-    #careers{
-        margin-top:80px;
-    }
-    
-}
-@media screen and (max-width: 435px) {
-    #careers{
-        margin-top:80px;
-    }
-    
 }

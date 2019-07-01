@@ -2,7 +2,28 @@
 @media (max-width: 350px) { 
 	.btn-1{padding: 10px 18px;}
     .btn-2{padding: 10px 18px;}
-    .btn-3{padding: 9px 17px;} 
+	.btn-3{padding: 9px 17px;} 
+	
+	.navbar{
+        top: 60px !important;
+    }
+
+    .content{
+        margin-top:55px;
+    }
+}
+@media (max-width: 434px) { 
+	.btn-1{padding: 10px 18px;}
+    .btn-2{padding: 10px 18px;}
+	.btn-3{padding: 9px 17px;} 
+	
+	.navbar{
+        top: 60px !important;
+    }
+
+    .content{
+        margin-top:55px;
+    }
 }
 
 
@@ -23,6 +44,10 @@
 		-webkit-clip-path: polygon(100% 0, 100% 98%, 75% 93%, 50% 98%, 25% 93%, 0 98%, 0 0);
 				clip-path: polygon(100% 0, 100% 98%, 75% 93%, 50% 98%, 25% 93%, 0 98%, 0 0);
 	}
+
+	.navbar-brand{
+        margin-left:25px;
+    }
 	
 }
 
@@ -43,7 +68,7 @@
 	.navbar-collapse{background-color: #fff; margin-top: 10px;}
 	
 	.navbar .navbar-nav .nav-link{color: #333; text-align: center;}
-	
+
 	.welcome-area .welcome-text p,
 	.welcome-slider p,
 	.welcome-video .welcome-text p,
@@ -65,6 +90,28 @@
 		line-height: 1.5em;
 		margin: 0 10%;
 	}
+
+	#careers{
+        padding-left:20px;
+        padding-right:20px;
+	}
+	
+	#application{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	
+	#always-contact .contact {
+        font-size: 90%;
+        padding: 0 5px;
+    }
+    #always-contact {
+        text-align: center;
+        padding: 5px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
 }
 
 /* Large devices (desktops, 992px and up)  */
@@ -81,6 +128,26 @@
 	.navbar-center-logo .navbar-collapse{background-color: #fff; margin-top: 10px;}
 	
 	.navbar-center-logo .navbar-nav .nav-link{color: #333; text-align: center;}
+
+	#careers{
+        margin-top:110px;
+	}
+	
+	#application{
+        margin-top:110px;
+	}
+	
+	#testimonials{
+        margin-top:100px;
+	}
+	
+	.navbar.atTop {
+		background:black;
+		}
+		
+		.navbar-brand{
+			margin-right:0 !important;
+		}
 }
 
 /* Extra large devices (large desktops, 1200px and up)  */

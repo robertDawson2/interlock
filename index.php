@@ -225,7 +225,7 @@
                             <p class="mb-20px"><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-phone"></i>  410-682-4942</p>
                         </div>
                         <div class="address">
-                            <p class="mb-50px"><a href="mailto:info@interlockpaving.com"><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-envelope"></i> info@interlockpaving.com</a></p>
+                            <p class="mb-50px"><a href="mailto:consumer+5d0ba5072d34b60014b56d5d@broadly.com"><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-envelope"></i> info@interlockpaving.com</a></p>
                         </div>
                     </div>
                 </div>

@@ -16,18 +16,23 @@
     <!-- ==================================================
                                           careers
     ================================================== -->
-    <section id="application" style="padding:30px;">
+    <section id="application">
             <h1 class="title-h p-relative txt-white text-center">
                 <span class="fw-200">Interlock Paving</span> Careers
                 <hr style="background:#cb0000; width:25%; height:2px;"/>
             </h1>
-            <?php if ($emailSent) { ?>
+            <?php if (!is_array($emailSent) && $emailSent !== false) { ?>
                 <div class="row">
                     <div class="col-sm-12 col-md-3"></div>
                     <div class="col-sm-12 col-md-6 alert-success text center">Your application has been submitted.</div>
                 </div>
+            <?php } elseif (is_array($emailSent) && isset($errors['upload'])) { ?>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3"></div>
+                    <div class="col-sm-12 col-md-6 alert-danger text center"><?php echo $errors['upload'] ?></div>
+                </div>
             <?php } ?>
-               <form action="application.php" method="POST" enctype="multipart/form-data">
+               <form action="application.php" method="POST" enctype="multipart/form-data" id="appForm">
                 <div class="row txt-white">
                     <div class="col-sm-12 col-md-6 form-group">
                         <label for="first">First Name<span class="color-orange"> *</span></label>
@@ -192,7 +197,7 @@
                     </div>
                     <div class=" col-sm-12 col-md-4">
                         <label for="appliedBefore">Have you applied before?<span class="color-orange"> *</span></label>
-                        <select class="form-control text-center" type="text" name="appliedBefore" id="appliedBefore" tabindex="11" required>
+                        <select class="form-control" type="text" name="appliedBefore" id="appliedBefore" tabindex="11" required>
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
