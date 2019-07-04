@@ -9,7 +9,7 @@
     }
 
     .content{
-        margin-top:55px;
+        margin-top:30px;
     }
 }
 @media (max-width: 434px) { 
@@ -18,11 +18,14 @@
 	.btn-3{padding: 9px 17px;} 
 	
 	.navbar{
-        top: 60px !important;
-    }
+		top: 60px !important;
+	}
+	#always-contact{
+
+	}
 
     .content{
-        margin-top:55px;
+        margin-top:30px;
     }
 }
 
