@@ -49,7 +49,7 @@
             $load = new Load;
             $body = $load->view('emailTemplates/applicationEmail.php',$post, true);
             //send email
-            sendMail('isg1315122@gmail.com','New Application',$body,$destination);
+            sendMail('careers@interlockpaving.com','New Application',$body,$destination);
             //clear form
             $_POST = array();
             $emailSent = true;

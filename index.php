@@ -155,17 +155,27 @@
                 <div class="owl-carousel owl-theme photo-owl-carousel">
                     <!-- gallery item -->
 
-                    <img src="images/tempwork/img1.jpg" alt="image">
+                    <img src="images/projects/17SWG.jpg" alt="image">
 
-                    <img src="images/tempwork/img3.jpg" alt="image">
+                    <img src="images/projects/Balto_Conv_Ctr1.jpg" alt="image">
 
-                    <img src="images/tempwork/img2.jpg" alt="image">
+                    <img src="images/projects/Balto_Conv_Ctr2.jpg" alt="image">
 
-                    <img src="images/tempwork/img6.jpg" alt="image">
+                    <img src="images/projects/ChristChurchHarborApartments2.JPG" alt="image">
 
-                    <img src="images/tempwork/img5.jpg" alt="image">
+                    <img src="images/projects/DeckerQuadEntrance.jpg" alt="image">
 
-                    <img src="images/tempwork/img4.jpg" alt="image">
+                    <img src="images/projects/DSC00008.jpg" alt="image">
+                    
+                    <img src="images/projects/DSC00016.jpg" alt="image">
+                    
+                    <img src="images/projects/HCCDragon3.jpg" alt="image">
+                    
+                    <img src="images/projects/pooldeck-kelly.jpg" alt="image">
+                    
+                    <img src="images/projects/UD01-21-08-B.jpg" alt="image">
+                    
+                    <img src="images/projects/WatersEdge1.jpg" alt="image">
                 </div>
             </div>
         </section>
