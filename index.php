@@ -118,7 +118,7 @@
                                 At Interlock, we view every assignment as a challange and an opportunity to exceed our own standards.
                             </p>
                             <p>
-                                Like the high jumper, whose goal is to constantly raise the bar on his or herpersonal best, all of us 
+                                Like the high jumper, whose goal is to constantly raise the bar on his or her personal best, all of us 
                                 at Interlock strive to achive the same - in the field or in the office, during the project and even after its completion.
                             </p>
                             <p>
