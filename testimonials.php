@@ -16,7 +16,7 @@
                 <div class="container txt-white">
                     <h1 class="title-h p-relative text-center txt-white">
                         <span class="fw-200">Our</span> Customers
-                        <hr style="background:#cb0000; width:25%; height:2px;"/>
+                        <hr style="background:#af0011; width:25%; height:2px;"/>
                     </h1>
                     <script src="//embed.broadly.com/include.js" defer data-url="/5d0ba5072d34b60014b56d5d/reviews"></script>
                     <!--

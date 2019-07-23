@@ -9,10 +9,10 @@
 }
 
 #careers a:hover{
-    color:#cb0000;
+    color:#af0011;
 }
 
 #careers a:focus, #careers a:active{
-    border-color: #cb0000;
+    border-color: #af0011;
     box-shadow: none;
 }

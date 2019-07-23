@@ -11,7 +11,7 @@
     <section id="careers" class="sec-padding text-center">
         <h1 class="title-h p-relative text-center txt-white">
             <span class="fw-200">Career</span> Oppurtunities
-            <hr style="background:#cb0000; width:25%; height:2px;"/>
+            <hr style="background:#af0011; width:25%; height:2px;"/>
         </h1>
         <p class="txt-white text-center team-p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.

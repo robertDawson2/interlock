@@ -41,8 +41,7 @@
                         <h1 class="mb-20px color-fff fw-400">Our <span class="color-orange fw-800">Committment.</span></h1>
                         <p class="txt-white">At Interlock, we work together to ensure, maintain, and continuously improve our high
                             standards for quality and service as a leader in the architectural paving industry.</p>
-                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px" href="#" data-scroll-nav='3'>Get Started</a>
-                        <a class="main-btn btn-2 mt-10px ml-5px mr-5px" href="#" data-scroll-nav='7'>Get In Touch</a>
+                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px" href="#" data-scroll-nav='4'>Get a quote</a>
                     </div>
                 </div>
             </div>
@@ -67,8 +66,8 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="mb-25px mt-25px wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s">
                                 <i class="icon-video color-orange fs-35 radius-50 mb-25px transition-4"></i>
-                                <p class="count fs-35 color-fff fw-600 mb-7px">12</p>
-                                <h3 class="color-aaa fw-300">Testimonials</h3>
+                                <p class="count fs-35 color-fff fw-600 mb-7px">800000</p>
+                                <h3 class="color-aaa fw-300">Sqft. Installed</h3>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -99,10 +98,12 @@
     <section id='about' class="about-area sec-padding bg-f6f6f6 hide-on-mobile" data-scroll-index="2">
             <div class="container">
                 <h1 class="title-h p-relative">
-                    <span class="fw-200">About</span> Interlock Paving!
+                    <span class="fw-200">About</span><span class="color-orange"> Interlock Paving!</span>
                     <span class="line p-absolute bg-orange"></span>
                 </h1>
-                <p class="title-p"><span class="fw-600">How knowledgeable and experienced a company is determines the outcome.</span></p>
+                <p class="title-p"><span class="">Interlock Paving was established in 1985. We are licensed in Maryland, Washington DC, Virginia, and Delaware.
+                    We deliver the best workmanship, customer service, and award winning quality in the architectural and interlocking paving industry. Please fell free to contact us for a free quote.
+                </span></p>
 
                 <div class="row">
                     <div class="col-md-6">
@@ -112,24 +113,18 @@
                     </div>
                     <div class="col-md-6">
                         <div class="about-text wow fadeInRight" data-wow-delay="0.7s">
-                            <h3 class="fw-600 mb-20px"><span class="fw-200"> A Message From </span> Our Owner</h3>
+                            <h3 class="fw-600 mb-20px"><span class="fw-200"> A Message From </span><span class="color-orange"> Our Owner</span></h3>
                             <p class="mb-20px">
-                                Interlock Paving was established in 1985. We are licensed in Maryland, Washington DC, Virginia, and Delaware.
-                                When trying to decide which contractor to use for your next project, there are certain questions to ask.
-                                At Interlock Paving, we hope to make the decision easier for you by telling you why we think you should choose us.
+                                At Interlock, we view every assignment as a challange and an opportunity to exceed our own standards.
                             </p>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p class="mb-10px"><i class="fa fa-check color-orange mr-5px"></i> We deliver what we say we're going to.</p>
-                                    <p class="mb-10px"><i class="fa fa-check color-orange mr-5px"></i> We deliver the best workmanship, customer service, and award winning quality.</p>
-                                    <p class="mb-10px"><i class="fa fa-check color-orange mr-5px"></i> We go beyond the usual.</p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="mb-10px"><i class="fa fa-check color-orange mr-5px"></i> We watch our customers, not our bottom line.</p>
-                                    <p class="mb-10px"><i class="fa fa-check color-orange mr-5px"></i> We have lifelong employees.</p>
-                                    <p class="mb-10px"><i class="fa fa-check color-orange mr-5px"></i> We listen to our customers and deliver a space where families come together and a house becomes a home.</p>
-                                </div>
-                            </div>
+                            <p>
+                                Like the high jumper, whose goal is to constantly raise the bar on his or herpersonal best, all of us 
+                                at Interlock strive to achive the same - in the field or in the office, during the project and even after its completion.
+                            </p>
+                            <p>
+                                If we live up to our reputation as one of the best contractors in our industry, we must always reach high to surpass our own records for 
+                                high-quality service.
+                            </p>
                             <div class="mt-15px color-orange fw-700">Paul Foreman, President</div>
                         </div>
                     </div>
@@ -146,7 +141,7 @@
         <section id='ourWork' class="work-area bg-333  sec-padding" data-scroll-index="3">
             <div class="container">
                 <h1 class="title-h txt-white p-relative">
-                    <span class="fw-200">Featured</span> Projects
+                    <span class="fw-200">Featured</span><span class="color-orange"> Projects</span>
                     <span class="line p-absolute bg-orange"></span>
                 </h1>
                 <p class="title-p txt-white">From inception to completion, we build partnerships with our clients based on trust, quality work, and outstanding customer service. </p>
@@ -220,22 +215,19 @@
 
                 <div class="row">
 
-                    <div class="col-md-12">
-                        <h1 class="title-h txt-gray p-relative">
-                            <span class="fw-200 ">Contact </span> Us
-                            <span class="line p-absolute bg-orange"></span>
-                        </h1>
-                        <p class="title-p mb-10px" style='margin-right: 0;'>If you would like to contact us regarding our services, products, or any question you may have, we welcome your comments and suggestions.
-                            We will respond promptly to your request. </p>
+                    <div class="col-md-12 text-center">
+                        <h2 class="p-relative ">
+                            <span class="fw-200 text-center">Contact </span><span class="color-orange"> Us</span>
+                        </h2>
                         <div class='color-orange fw-600 fs-15'>MHIC #26272</div>
                         <div class="address">
-                            <p class="mb-20px"><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-map"></i>2191 Greenspring Drive,  Timonium, MD 21093.</p>
+                            <p class=""><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-map"></i>2191 Greenspring Drive,  Timonium, MD 21093.</p>
                         </div>
                         <div class="address">
-                            <p class="mb-20px"><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-phone"></i>  410-682-4942</p>
+                            <p class=""><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-phone"></i>  410-682-4942</p>
                         </div>
                         <div class="address">
-                            <p class="mb-50px"><a href="mailto:consumer+5d0ba5072d34b60014b56d5d@broadly.com"><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-envelope"></i> info@interlockpaving.com</a></p>
+                            <p class=""><a href="mailto:consumer+5d0ba5072d34b60014b56d5d@broadly.com"><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-envelope"></i> info@interlockpaving.com</a></p>
                         </div>
                     </div>
                 </div>

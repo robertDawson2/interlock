@@ -9,7 +9,7 @@
 }
 
 #application .error{
-    color:#cb0000;
+    color:#af0011;
 }
 
 #application input, #application select{
@@ -17,7 +17,7 @@
     color:white;
 }
 #application input:focus, #application select:focus{
-    border-color: #cb0000;
+    border-color: #af0011;
 }
 
 /*----------------------------------------------------

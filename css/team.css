@@ -3,7 +3,7 @@
 ----------------------------------------------------*/
 #team{
     margin-top: 40px;
-    background: #666;
+    background: white;
     padding-top:100px;
 }
 .team-area .team-text .social-icons{
@@ -40,6 +40,10 @@
 }
 
 .modal-content{margin-top:50px;}
+
+a img.img100{
+    width:100%;
+}
 
 @media screen and (max-width: 1000px) {
     #team{

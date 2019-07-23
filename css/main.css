@@ -123,11 +123,10 @@ h6{
 
 .title-p{
     text-align: left;
-    margin: 0 55% 70px 0;
+    margin: 0 0 70px 0;
     font-size: 15px;
 }
 .team-p{
-    margin: 0 20% 70px 20%;
     font-size: 15px;
 }
 
@@ -292,8 +291,8 @@ h6{
 .color-ccc{color: #ccc;}
 .color-bbb{color: #bbb;}
 .color-aaa{color: #aaa;}
-.color-orange{color: #cb0000}
-.color-orange-hvr:hover{color: #cb0000;}
+.color-orange{color: #af0011}
+.color-orange-hvr:hover{color: #af0011;}
 .color-fff-hvr:hover{color: #fff;}
 .color-gold{color:  #ecb312;}
 
@@ -306,8 +305,8 @@ h6{
 .bg-111{background-color: #111;}
 .bg-222{background-color: #222;}
 .bg-333{background-color: #333;}
-.bg-orange{background-color: #cb0000;}
-.bg-orange-hvr:hover{background-color: #cb0000;}
+.bg-orange{background-color: #af0011;}
+.bg-orange-hvr:hover{background-color: #af0011;}
 .bg-333-hvr:hover{background-color: #333;}
 .bg-fff-hvr:hover{background-color: #fff;}
 
@@ -391,7 +390,7 @@ h6{
 /* btn-1 */
 .btn-1{
     padding: 10px 26px;
-    background-color: #cb0000;
+    background-color: #af0011;
     color: #fff;
 }
 .btn-1:hover{color: #333;}
@@ -441,7 +440,6 @@ h6{
 }
 
 .content{
-    margin-top:40px;
 }
 
 /*----------------------------------------------------
@@ -492,7 +490,7 @@ h6{
     border: none;
 }
 .load-wrapp .wrap ul.dots-box li.dot span {
-    background: #cb0000;
+    background: #af0011;
     bottom: 0px;
     left: 50%;
     margin-left: -2px;
@@ -633,7 +631,7 @@ h6{
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover{
-    color: #cb0000;
+    color: #af0011;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -642,7 +640,7 @@ h6{
 }
 
 .navbar .navbar-nav .nav-link.active{
-    color: #cb0000;
+    color: #af0011;
 }
 
 .navbar-toggler:focus{
@@ -952,6 +950,10 @@ h6{
 
 .welcome-particles .welcome-text p{
     margin: 0 30%;
+}
+
+#ownerpic {
+    width:100%;
 }
 /*----------------------------------------------------
                                         End welcome
@@ -1574,7 +1576,7 @@ h6{
     top: 0;
     padding: 5px 20px;
     text-align: right;
-    background: #cb0000;
+    background: #af0011;
     width: 100%;
     z-index: 9999;
 }

@@ -13,24 +13,28 @@
     ================================================== -->
     <section id='team' class="team-area sec-padding text-center">
         <div class="container">
-            <h1 class="title-h p-relative text-center txt-white">
-                <span class="fw-200">Our</span> Team
-                <hr style="background:#cb0000; width:25%; height:2px;"/>
-            </h1>
-            <p class="txt-white text-center team-p">Every proposal that leaves our office is typed, clearly outlining what will be done and what is and what
-                is not covered by the proposal price. All proposals are accompanied by a list of references. We provide guarantees on
-                all materials and we carry general liability, workman's compensation, and auto insurance to protect you. We would be pleased
-                to provide you with a Certificate of Insurance.
-            </p>
+            <div class="row mb-30px">
+                <div class="col-xs-12 col-md-4">
+                    <h1 class="title-h p-relative">
+                        <span class="fw-200">Our</span><span class="color-orange"> Team</span>
+                        <span class="line p-absolute bg-orange"></span>
+                    </h1>
+                </div>
+                <div class="col-xs-12 col-md-8 ">
+                    <p class="team-p">Every proposal that leaves our office is typed, clearly outlining what will be done and what is and what
+                        is not covered by the proposal price.
+                    </p>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-xs-12 col-md-3">
-                    <a href="#" data-toggle="modal" data-target="#presidentModal">
-                        <img alt="team" src="images/tempteam/Paul_Foreman.jpg" class="">
+                <div class="col-md-2"></div>
+                <div class="col-xs-12 col-md-4">
+                    <a href="#" data-toggle="modal" data-target="#presidentModal" class="">
+                        <img alt="team" src="images/tempteam/Paul_Foreman.jpg" class="img100">
                     </a>
                     
                     <h5 class="mb-0px mt-10px fw-600">Paul Foreman</h5>
-                    <p class="txt-white mb-10px">President</p>
+                    <p class="mb-10px">President</p>
                     <!-- President Modal -->
                     <div class="modal fade" id="presidentModal" role="dialog" aria-labelledby="presidentModal" aria-hidden="true">
                     <div class="modal-dialog">
@@ -51,12 +55,12 @@
                     </div>
                 </div>
                 
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-4">
                     <a href="#" data-toggle="modal" data-target="#projectMngrModal">
-                        <img alt="team" src="./images/tempteam/Chris_Turner.jpg" class="">
+                        <img alt="team" src="./images/tempteam/Chris_Turner.jpg" class="img100">
                     </a>
                     <h5 class="mb-0px mt-10px fw-600">Chris Turner</h5>
-                    <p class="txt-white mb-10px">Residential Project Manager</p>
+                    <p class="mb-10px">Residential Project Manager</p>
                 </div>
                 <!-- Residential Mngr Modal -->
                 <div class="modal fade" id="projectMngrModal" role="dialog" aria-labelledby="projectMgrModal" aria-hidden="true">
@@ -80,13 +84,13 @@
             <br/>
             <div class="row">
 
-                <div class="col-md-3"></div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-md-2"></div>
+                <div class="col-xs-12 col-md-4">
                     <a href="#" data-toggle="modal" data-target="#productionMngrModal">
-                        <img alt="team" src="./images/tempteam/Gabe_Faber.jpg" class="">
+                        <img alt="team" src="./images/tempteam/Gabe_Faber.jpg" class="img100">
                     </a>
                     <h5 class="mb-0px mt-10px fw-600">Gabriel Faber</h5>
-                    <p class="txt-white mb-10px">Production Manager</p>
+                    <p class="mb-10px">Production Manager</p>
                 </div>
                 <!-- Production Mngr Modal -->
                 <div class="modal fade" id="productionMngrModal" role="dialog" aria-labelledby="productionMgrModal" aria-hidden="true">
@@ -106,12 +110,12 @@
                         </div>
                     </div>
                     </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-4">
                     <a href="#" data-toggle="modal" data-target="#operationsModal">
-                        <img alt="team" src="./images/tempteam/Mike_Farrell.jpg" class="">
+                        <img alt="team" src="./images/tempteam/Mike_Farrell.jpg" class="img100">
                     </a>
                     <h5 class="mb-0px mt-10px fw-600">Mike Farrell</h5>
-                    <p class="txt-white mb-5px">Operations & Safety </p>
+                    <p class="mb-5px">Operations & Safety </p>
                 </div>
                 <!-- operations Modal -->
                 <div class="modal fade" id="operationsModal" role="dialog" aria-labelledby="operationsModal" aria-hidden="true">

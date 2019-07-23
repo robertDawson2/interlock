@@ -19,7 +19,7 @@
     <section id="application">
             <h1 class="title-h p-relative txt-white text-center">
                 <span class="fw-200">Interlock Paving</span> Careers
-                <hr style="background:#cb0000; width:25%; height:2px;"/>
+                <hr style="background:#af0011; width:25%; height:2px;"/>
             </h1>
             <?php if (!is_array($emailSent) && $emailSent !== false) { ?>
                 <div class="row">
@@ -235,7 +235,7 @@
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-4">
-                        <button class="btn form-control text-center" name="submitApp" type="submit" style="background:#cb0000; color:white; border:1px solid black">Submit</button>
+                        <button class="btn form-control text-center" name="submitApp" type="submit" style="background:#af0011; color:white; border:1px solid black">Submit</button>
                     </div>
                 </div>
             </form>
