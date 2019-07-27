@@ -107,8 +107,11 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="about-image mb-50px wow fadeInLeft" data-wow-delay="0.4s">
-                            <img src="images/paul.jpg" alt="about">
+                        <div class="about-image wow fadeInLeft" data-wow-delay="0.4s" id="about-pic">
+                            <img src="images/Paul_Foreman.jpg" alt="about" id="about-pic">
+                        </div>
+                        <div class="about-image wow fadeInLeft" data-wow-delay="0.4s" id="about-pic">
+                            <img src="images/HighJumper.png" alt="about" id="highjumper">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -117,11 +120,11 @@
                             <p class="mb-20px">
                                 At Interlock, we view every assignment as a challange and an opportunity to exceed our own standards.
                             </p>
-                            <p>
+                            <p class="mb-20px">
                                 Like the high jumper, whose goal is to constantly raise the bar on his or her personal best, all of us 
                                 at Interlock strive to achive the same - in the field or in the office, during the project and even after its completion.
                             </p>
-                            <p>
+                            <p class="mb-20px">
                                 If we live up to our reputation as one of the best contractors in our industry, we must always reach high to surpass our own records for 
                                 high-quality service.
                             </p>

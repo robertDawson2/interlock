@@ -29,134 +29,183 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-xs-12 col-md-4">
-                    <a href="#" data-toggle="modal" data-target="#presidentModal" class="">
-                        <img alt="team" src="images/tempteam/Paul_Foreman.jpg" class="img100">
-                    </a>
-                    
+                    <div data-toggle="modal" data-target="#presidentModal" class="hover-red">
+                        <div class="img-plus-sign"></div>
+                        <a href="#"  class="">
+                            <img alt="team" src="images/tempteam/Paul_Foreman.jpg" class="img100">
+                        </a>
+                    </div>
                     <h5 class="mb-0px mt-10px fw-600">Paul Foreman</h5>
                     <p class="mb-10px">President</p>
+
                     <!-- President Modal -->
-                    <div class="modal fade" id="presidentModal" role="dialog" aria-labelledby="presidentModal" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header" style="border:none;">
-                            <h5 class="modal-title" id="presidentModal">President</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                                President description goes here. 
-                                <br/>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                            </div>
+                    <div class="modal fade" id="presidentModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg ">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border:none;">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <img alt="team" src="images/tempteam/Paul_Foreman.jpg" class="">
+                                        </div>
+                                        <div class="col-xs-12 col-md-1"></div>
+                                        <div class="col-xs-12 col-md-7 text-left">
+                                            <h4 class="modal-title color-orange fw-600" id="presidentModal">Paul Foreman</h5>
+                                            <h5 class="modal-title" id="presidentModal">President</h5>
+                                            </br> 
+                                            <p class="txt-white">
+                                                Paul Foreman bio goes here
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
                     </div>
-                    </div>
+                    <!-- End President Modal-->
                 </div>
                 
                 <div class="col-xs-12 col-md-4">
                     <a href="#" data-toggle="modal" data-target="#projectMngrModal">
                         <img alt="team" src="./images/tempteam/Chris_Turner.jpg" class="img100">
+                        <div class="img-plus-sign"></div>
+
                     </a>
                     <h5 class="mb-0px mt-10px fw-600">Chris Turner</h5>
                     <p class="mb-10px">Residential Project Manager</p>
+                    <!-- Residential Mngr Modal -->
+                    <div class="modal fade" id="projectMngrModal" role="dialog" aria-labelledby="projectMgrModal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg ">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border:none;">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <img alt="team" src="./images/tempteam/Chris_Turner.jpg" class="">
+                                        </div>
+                                        <div class="col-xs-12 col-md-1"></div>
+                                        <div class="col-xs-12 col-md-7 text-left">
+                                            <h4 class="modal-title color-orange fw-600" id="presidentModal">Chris Turner</h5>
+                                            <h5 class="modal-title" id="presidentModal">Residential Project Manager</h5>
+                                            </br>
+                                            <p class="txt-white">
+                                                Chris Turner bio goes here
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
-                <!-- Residential Mngr Modal -->
-                <div class="modal fade" id="projectMngrModal" role="dialog" aria-labelledby="projectMgrModal" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header" style="border:none;">
-                            <h5 class="modal-title" id="projectMgrModal">Residential Project Manager</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                                Project Manager description goes here. 
-                                <br/>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                            </div>
-                        </div>
-                    </div>
-                    </div>
             </div>
-            <br/>
+                <br/>
             <div class="row">
-
                 <div class="col-md-2"></div>
                 <div class="col-xs-12 col-md-4">
                     <a href="#" data-toggle="modal" data-target="#productionMngrModal">
                         <img alt="team" src="./images/tempteam/Gabe_Faber.jpg" class="img100">
+                        <div class="img-plus-sign"></div>
+
                     </a>
                     <h5 class="mb-0px mt-10px fw-600">Gabriel Faber</h5>
                     <p class="mb-10px">Production Manager</p>
+                    <!-- Production Mngr Modal -->
+                    <div class="modal fade" id="productionMngrModal" role="dialog" aria-labelledby="productionMgrModal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg ">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border:none;">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <img alt="team" src="./images/tempteam/Gabe_Faber.jpg" class="">
+                                        </div>
+                                        <div class="col-xs-12 col-md-1"></div>
+                                        <div class="col-xs-12 col-md-7 text-left">
+                                            <h4 class="modal-title color-orange fw-600" id="presidentModal">Gabriel Faber</h5>
+                                            <h5 class="modal-title" id="presidentModal">Production Manager</h5>
+                                            </br>
+                                            <p class="txt-white">
+                                                Gabriel Faber bio goes here
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
-                <!-- Production Mngr Modal -->
-                <div class="modal fade" id="productionMngrModal" role="dialog" aria-labelledby="productionMgrModal" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header" style="border:none;">
-                            <h5 class="modal-title" id="productionMgrModal">Production Manager</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                                Production Manager description goes here. 
-                                <br/>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                            </div>
-                        </div>
-                    </div>
-                    </div>
                 <div class="col-xs-12 col-md-4">
-                    <a href="#" data-toggle="modal" data-target="#operationsModal">
-                        <img alt="team" src="./images/tempteam/Mike_Farrell.jpg" class="img100">
-                    </a>
+                        <a href="#" data-toggle="modal" data-target="#operationsModal">
+                            <img alt="team" src="./images/tempteam/Mike_Farrell.jpg" class="img100">
+                            <div class="img-plus-sign"></div>
+                        </a>
                     <h5 class="mb-0px mt-10px fw-600">Mike Farrell</h5>
-                    <p class="mb-5px">Operations & Safety </p>
+                    <p class="mb-5px">Operations & Safety</p>
+                    <!-- operations Modal -->
+                    <div class="modal fade" id="operationsModal" role="dialog" aria-labelledby="operationsModal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg ">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border:none;">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <img alt="team" src="./images/tempteam/Mike_Farrell.jpg" class="">
+                                            
+                                        </div>
+                                        <div class="col-xs-12 col-md-1"></div>
+                                        <div class="col-xs-12 col-md-7 text-left">
+                                            <h4 class="modal-title color-orange fw-600" id="presidentModal">Mike Farrell</h5>
+                                            <h5 class="modal-title" id="presidentModal">Operations & Safety</h5>
+                                            </br>
+                                            <p class="txt-white">
+                                                Mike Farrell bio goes here
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--<div class="team-text">
+                        <div class="o-hidden mb-20px p-relative">
+                            <img alt="team" src="https://via.placeholder.com/300x350" class="transition-5">
+                            <div class="social-icons p-absolute flex-center transition-4">
+                                <div class="icons transition-5">
+                                    <a href="#0" class="mr-2px ml-2px mb-10px"><i class="fa color-fff  bg-orange-hvr radius-50 fa-facebook"></i></a>
+                                    <a href="#0" class="mr-2px ml-2px mb-10px"><i class="fa color-fff  bg-orange-hvr radius-50 fa-rss"></i></a>
+                                    <a href="#0" class="mr-2px ml-2px mb-10px"><i class="fa color-fff  bg-orange-hvr radius-50 fa-twitter"></i></a>
+                                    <a href="#0" class="mr-2px ml-2px mb-10px"><i class="fa color-fff  bg-orange-hvr radius-50 fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mb-0px mt-10px fw-600">Jone Kean</h5>
+                        <p class="color-aaa mb-5px">Photographer</p>
+                    </div>-->
                 </div>
-                <!-- operations Modal -->
-                <div class="modal fade" id="operationsModal" role="dialog" aria-labelledby="operationsModal" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header" style="border:none;">
-                            <h5 class="modal-title" id="operationsModal">Operations & Safety</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                                Operations & Safety description goes here. 
-                                <br/>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                <!--<div class="team-text">
-                    <div class="o-hidden mb-20px p-relative">
-                        <img alt="team" src="https://via.placeholder.com/300x350" class="transition-5">
-                        <div class="social-icons p-absolute flex-center transition-4">
-                            <div class="icons transition-5">
-                                <a href="#0" class="mr-2px ml-2px mb-10px"><i class="fa color-fff  bg-orange-hvr radius-50 fa-facebook"></i></a>
-                                <a href="#0" class="mr-2px ml-2px mb-10px"><i class="fa color-fff  bg-orange-hvr radius-50 fa-rss"></i></a>
-                                <a href="#0" class="mr-2px ml-2px mb-10px"><i class="fa color-fff  bg-orange-hvr radius-50 fa-twitter"></i></a>
-                                <a href="#0" class="mr-2px ml-2px mb-10px"><i class="fa color-fff  bg-orange-hvr radius-50 fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <h5 class="mb-0px mt-10px fw-600">Jone Kean</h5>
-                    <p class="color-aaa mb-5px">Photographer</p>
-                </div>-->
             </div>
         </div>
     </section>
-        <!-- ==================================================
-        End team-area
+    <!-- ==================================================
+    End team-area
     ================================================== -->
-
+    
     <!-- ==================================================
                                                       footer-area
     ================================================== -->

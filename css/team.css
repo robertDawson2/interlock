@@ -4,7 +4,7 @@
 #team{
     margin-top: 40px;
     background: white;
-    padding-top:100px;
+    padding-top:120px;
 }
 .team-area .team-text .social-icons{
     top: 0;
@@ -44,6 +44,48 @@
 a img.img100{
     width:100%;
 }
+.img-plus-sign{
+    height:75px;
+    width:75px;
+    float: left;
+    position: absolute;
+    right: 20px;
+    bottom: 75px;
+
+}
+.img-plus-sign:hover:before{
+    background-color:#af0011;
+}
+
+.img-plus-sign:hover::after{
+    background-color:#af0011;
+}
+
+.img-plus-sign::after{
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  height: 5px;
+  margin-top: -5px;
+  top: 54%;
+  left: 20px;
+  right: 20px;
+  z-index: 9;
+}
+
+.img-plus-sign::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 5px;
+    margin-left: -5px;
+    left: 53%;
+    top: 20px;
+    bottom: 20px;
+    z-index: 9;
+  }
 
 @media screen and (max-width: 1000px) {
     #team{
