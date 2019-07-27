@@ -198,6 +198,15 @@ h6{
     padding: 80px;
 }
 
+/*** height ***/
+.height-100px{height:100px;}
+.height-200px{height:200px;}
+.height-250px{height:250px;}
+.height-300px{height:300px;}
+.height-400px{height:400px;}
+.height-500px{height:500px;}
+.height-600px{height:600px;}
+
 /*** padding ***/
 .sec-padding{padding: 80px 0;}
 .footer-padding{padding: 40px 0;}
@@ -305,6 +314,7 @@ h6{
 .bg-111{background-color: #111;}
 .bg-222{background-color: #222;}
 .bg-333{background-color: #333;}
+.bg-666{background-color: #666;}
 .bg-orange{background-color: #af0011;}
 .bg-orange-hvr:hover{background-color: #af0011;}
 .bg-333-hvr:hover{background-color: #333;}
@@ -1606,10 +1616,7 @@ h6{
     font-size: 18px;
 }
 
-.modal-content{
-    background: #666;
-    color:#fff;
-}
+
 
 /* chat button */
 

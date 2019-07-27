@@ -40,14 +40,12 @@
 
                     <!-- President Modal -->
                     <div class="modal fade" id="presidentModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg ">
-                            <div class="modal-content">
-                                <div class="modal-header" style="border:none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content bg-666">
+                                <div class="modal-body">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
                                     <div class="row">
                                         <div class="col-xs-12 col-md-4">
                                             <img alt="team" src="images/tempteam/Paul_Foreman.jpg" class="">
@@ -79,14 +77,12 @@
                     <p class="mb-10px">Residential Project Manager</p>
                     <!-- Residential Mngr Modal -->
                     <div class="modal fade" id="projectMngrModal" role="dialog" aria-labelledby="projectMgrModal" aria-hidden="true">
-                        <div class="modal-dialog modal-lg ">
-                            <div class="modal-content">
-                                <div class="modal-header" style="border:none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content bg-666">
+                                <div class="modal-body">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
                                     <div class="row">
                                         <div class="col-xs-12 col-md-4">
                                             <img alt="team" src="./images/tempteam/Chris_Turner.jpg" class="">
@@ -120,14 +116,12 @@
                     <p class="mb-10px">Production Manager</p>
                     <!-- Production Mngr Modal -->
                     <div class="modal fade" id="productionMngrModal" role="dialog" aria-labelledby="productionMgrModal" aria-hidden="true">
-                        <div class="modal-dialog modal-lg ">
-                            <div class="modal-content">
-                                <div class="modal-header" style="border:none;">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content bg-666">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
                                     <div class="row">
                                         <div class="col-xs-12 col-md-4">
                                             <img alt="team" src="./images/tempteam/Gabe_Faber.jpg" class="">
@@ -156,14 +150,12 @@
                     <p class="mb-5px">Operations & Safety</p>
                     <!-- operations Modal -->
                     <div class="modal fade" id="operationsModal" role="dialog" aria-labelledby="operationsModal" aria-hidden="true">
-                        <div class="modal-dialog modal-lg ">
-                            <div class="modal-content">
-                                <div class="modal-header" style="border:none;">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content bg-666">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
                                     <div class="row">
                                         <div class="col-xs-12 col-md-4">
                                             <img alt="team" src="./images/tempteam/Mike_Farrell.jpg" class="">
