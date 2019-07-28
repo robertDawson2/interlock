@@ -1,74 +1,49 @@
 <!-- Large modal -->
-
 <div class="modal fade " id="appModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content ">
-    <form action="application.php" method="POST" enctype="multipart/form-data" id="appForm">
-                <div class="row txt-white">
+    <form action="" method="POST" enctype="multipart/form-data" id="appForm">
+                <div class="row">
                     <div class="col-sm-12 col-md-6 form-group">
                         <label for="first">First Name<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['fname'])) { 
-                                foreach ($errors['fname'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
+                        <span class="fname-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="fname" id="fname" tabindex="1" 
                             value="<?php if (isset($_POST['fname'])) {echo $_POST['fname'];} ?>" required autofocus="true">
                         <label for="phone">Phone Number<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['phone'])) { 
-                                foreach ($errors['phone'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
-                        <input class="form-control text-center" type="tel" name="phone" id="phone" tabindex="3" 
+                        <span class="phone-error d-none error"></span>
+                        <input class="form-control text-center" type="tel" name="phone" maxlength="10" id="phone" tabindex="3" 
                             value="<?php if (isset($_POST['phone'])) {echo $_POST['phone'];} ?>" required>
                         <label for="addr1">Address 1<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['addr1'])) { 
-                                foreach ($errors['addr1'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
+                        <span class="addr1-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="addr1" id="addr1" tabindex="5" 
                             value="<?php if (isset($_POST['addr1'])) {echo $_POST['addr1'];} ?>" required>
                     </div>
                     <div class="col-sm-12 col-md-6 form-group">
                         <label for="lname">Last Name<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['lname'])) { 
-                                foreach ($errors['lname'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
+                        <span class="lname-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="lname" id="lname" tabindex="2" 
                             value="<?php if (isset($_POST['lname'])) {echo $_POST['lname'];} ?>" required>
                         <label for="email">Email Address<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['email'])) { 
-                                foreach ($errors['email'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
+                        <span class="email-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="email" id="email" tabindex="4" 
                             value="<?php if (isset($_POST['email'])) {echo $_POST['email'];} ?>" required>
                         <label for="addr2">Address 2</label>
-                        <?php if (isset($errors['addr2'])) { 
-                                foreach ($errors['addr2'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
-                        <input class="form-control text-center" type="email" name="addr2" id="addr2" tabindex="6"
+                        <span class="addr2-error d-none error"></span>
+                        <input class="form-control text-center" type="text" name="addr2" id="addr2" tabindex="6"
                             value="<?php if (isset($_POST['addr2'])) {echo $_POST['addr2'];} ?>" >
                     </div>
                 </div>
-                <div class="row txt-white">
-                    <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
                         <label for="city">City<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['city'])) { 
-                                foreach ($errors['city'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
+                        <span class="city-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="city" id="city" tabindex="7" 
                             value="<?php if (isset($_POST['city'])) {echo $_POST['city'];} ?>" required>
                     </div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-6">
                         <label for="state">State<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['state'])) { 
-                                foreach ($errors['state'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
-                        <select class="form-control" name="state" id="state" tabindex="8" required>
+                        <span class="state-error d-none error"></span>
+                        <select class="form-control text-center" name="state" id="state" tabindex="8" required>
                             <option value="" selected="selected">Select a State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -123,89 +98,58 @@
                             <option value="WY">Wyoming</option>
                         </select>
                     </div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-6">
                         <label for="zip">Zip Code<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['zip'])) { 
-                                foreach ($errors['zip'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
-                        <input class="form-control text-center" type="text" name="zip" id="zip" tabindex="9" value="<?php if (isset($_POST['zip'])) {echo $_POST['zip'];}?>" required>
+                        <span class="zip-error d-none error"></span>
+                        <input class="form-control text-center" type="text" name="zip" id="zip" maxlength="5" tabindex="9" value="<?php if (isset($_POST['zip'])) {echo $_POST['zip'];}?>" required>
                     </div>
-                    <div class=" col-sm-12 col-md-4">
-                        <?php if (isset($_POST['position'])) {
-                            echo $_POST['position'];
-                        } ?>
+                    <div class=" col-sm-12 col-md-6">
                         <label for="position">Position<span class="color-orange"> *</span></label>
-                        <input disabled class="form-control text-center" type="text" tabindex="10" required
+                        <input disabled class="form-control text-center" id="positionHolder" type="text" tabindex="10" required
                             value="<?php
-                                if (isset($_POST['position1'])) {
-                                    echo "Laborer";
-                                } elseif (isset($_POST['position2'])) {
-                                    echo "Foreman";
-                                } elseif (isset($_POST['position3'])) {
-                                    echo "Heavy Machine Operator";
-                                } elseif (isset($_POST['position4'])) {
-                                    echo "CDL Driver";
-                                } elseif (isset($_POST['position'])) {
+                                if (isset($_POST['position'])) {
                                     echo $_POST['position'];
                                 }
                             ?>"
                         >
                         <input type="hidden" name="position" value="<?php
-                                if (isset($_POST['position1'])) {
-                                    echo "Laborer";
-                                } elseif (isset($_POST['position2'])) {
-                                    echo "Foreman";
-                                } elseif (isset($_POST['position3'])) {
-                                    echo "Heavy Machine Operator";
-                                } elseif (isset($_POST['position4'])) {
-                                    echo "CDL Driver";
-                                } elseif (isset($_POST['position'])) {
+                                if (isset($_POST['position'])) {
                                     echo $_POST['position'];
                                 }
                             ?>"
                         >
                     </div>
-                    <div class=" col-sm-12 col-md-4">
+                    <div class=" col-sm-12 col-md-6">
+                        <label for="referredBy">Refered by</label>
+                        <span class="referredBy-error d-none error"></span>
+                        <input class="form-control text-center" type="text" name="referredBy" id="referredBy" tabindex="11" value="<?php if (isset($_POST['referedBy'])) {echo $_POST['referedBy'];} ?>">
+                    </div>
+                    <div class=" col-sm-12 col-md-6">
                         <label for="appliedBefore">Have you applied before?<span class="color-orange"> *</span></label>
-                        <select class="form-control" type="text" name="appliedBefore" id="appliedBefore" tabindex="11" required>
+                        <select class="form-control text-center" type="text" name="appliedBefore" id="appliedBefore" tabindex="12" required>
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
                     </div>
-                    <div class=" col-sm-12 col-md-4">
-                        <label for="referedBy">Refered by</label>
-                        <?php if (isset($errors['referedBy'])) { 
-                                foreach ($errors['referedBy'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
-                        <input id="referedBy" class="form-control text-center" type="text" name="referedBy" id="referedBy" tabindex="12" value="<?php if (isset($_POST['referedBy'])) {echo $_POST['referedBy'];} ?>">
-                    </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4 hideApplied">
+                    <div class="col-md-3 hideApplied"></div>
+                    <div class="col-sm-12 col-md-6 hideApplied">
                         <label for="appliedDate">When did you apply<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['appliedDate'])) { 
-                                foreach ($errors['appliedDate'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
+                        <span class="appliedDate-error d-none error"></span>
                         <input class="form-control text-center" type="date" name="appliedDate" id="appliedDate" value="<?php if (isset($_POST['appliedDate'])) {echo $_POST['appliedDate'];} ?>">
                     </div>
-                    <div class="col-md-4 hideApplied"></div>
-                    <div class="col-md-4 hideApplied"></div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-3 "></div>
+                    <div class="col-md-3 hideApplied"></div>
+                    <div class="col-sm-12 col-md-6">
                         <label for="resume">Upload Resume<span class="color-orange"> *</span></label>
-                        <?php if (isset($errors['resume'])) { 
-                                foreach ($errors['resume'] as $key) { ?>
-                                    <span class="error"><?php echo $key ?></span>
-                        <?php   } } ?>
+                        <span class="resume-error d-none error"></span>
                         <input type="file" name="resume" required />
                     </div>
                 </div>
                 <br/>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-3">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-6">
                         <button class="btn form-control text-center" name="submitApp" type="submit" style="background:#af0011; color:white; border:1px solid black">Submit</button>
                     </div>
                 </div>

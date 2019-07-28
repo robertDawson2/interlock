@@ -1,7 +1,6 @@
 <?php
     $emailSent = false;
-    if (isset($_POST['submitApp']) && $_SERVER["REQUEST_METHOD"] == "POST") {
-
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
         include 'loadView.php';
         $post = array();
         $post['firstname'] = clean_input($_POST['fname']);
@@ -17,8 +16,8 @@
         $post['zip'] = clean_input($_POST['zip']);
         // position not coming through when added via post its oddS
         $post['position'] = clean_input($_POST['position']);
-        if ($_POST['referedBy'] !== '') {
-            $post['referedBy'] = clean_input($_POST['referedBy']);
+        if ($_POST['referredBy'] !== '') {
+            $post['referredBy'] = clean_input($_POST['referredBy']);
         }
         if ($_POST['appliedBefore'] === 'Yes') {
             $post['appliedDate'] = clean_input($_POST['appliedDate']);
@@ -28,9 +27,9 @@
         }
         
         $errors = validateApplication($post);
-        
 
-        $uploadLoc = '../uploads/applications/';
+        $parentDir = realpath('../');
+        $uploadLoc = "$parentDir/uploads/applications/";
         if (!file_exists($uploadLoc)) {
             mkdir($uploadLoc, 0777, true);
         }
@@ -45,16 +44,15 @@
         }
         // validation ok & file uploaded successfully
         if (!is_array($errors)) {
-            
             $load = new Load;
             $body = $load->view('emailTemplates/applicationEmail.php',$post, true);
             //send email
-            sendMail('careers@interlockpaving.com','New Application',$body,$destination);
+            sendMail('careers@interlock.com','New Application',$body,$destination);
             //clear form
             $_POST = array();
-            $emailSent = true;
+            echo json_encode(array('success' => 'sent'));
         } else {
-            $emailSent = $error['upload'];
+            echo json_encode($errors);
         }
     }
 
@@ -79,7 +77,7 @@
         );
         
         $fnameErrorNum = $lnameErrorNum = $phoneErrorNum = $emailErrorNum = $addr1ErrorNum = $addr2ErrorNum =
-        $cityErrorNum = $stateErrorNum = $zipErrorNum = $referedByErrorNum = $appliedDateErrorNum = $resumeErrorNum = 0;
+        $cityErrorNum = $stateErrorNum = $zipErrorNum = $referredByErrorNum = $appliedDateErrorNum = $resumeErrorNum = 0;
         
         // first name rules
         if (empty($post['firstname'])) {
@@ -123,19 +121,19 @@
 
         // address1 rules
         if (empty($post['address1'])) {
-            $errors['address1'][$address1ErrorNum] = 'Please enter an address';
-            $address1ErrorNum++;
+            $errors['addr1'][$addr1ErrorNum] = 'Please enter an address';
+            $addr1ErrorNum++;
         }
-        if (preg_match('/[^\d\sa-zA-Z\.]/',$post['address1'])) {
-            $errors['address1'][$address1ErrorNum] = 'Address contains disallowed characters (!@#$%^&*{}[]:;"\',<>?/\|)';
-            $address1ErrorNum++;
+        if (preg_match('/[^a-zA-Z\d\s\.]/',$post['address1'])) {
+            $errors['addr1'][$addr1ErrorNum] = 'Address contains disallowed characters (!@#$%^&*{}[]:;"\',<>?/\|)';
+            $addr1ErrorNum++;
         }
 
         // address2 rules optional
         if (isset($post['address2'])) {
             if (preg_match('/[^\d\sa-zA-Z\.]/',$post['address2'])) {
-                $errors['address2'][$address2ErrorNum] = 'Address contains disallowed characters (!@#$%^&*{}[]:;"\',<>?/\|)';
-                $address2ErrorNum++;
+                $errors['addr2'][$addr2ErrorNum] = 'Address contains disallowed characters (!@#$%^&*{}[]:;"\',<>?/\|)';
+                $addr2ErrorNum++;
             }
         }
 
@@ -169,18 +167,18 @@
             $zipErrorNum++;
         }
 
-        // referedBy rules optional
-        if (isset($post['referedBy'])) {
-            if (preg_match('/[^A-Z]/i',$post['referedBy'])) {
-                $errors['referedBy'][$referedByErrorNum] = 'Referal may only contain letters';
-                $referedByErrorNum++;
+        // referredBy rules optional
+        if (isset($post['referredBy'])) {
+            if (preg_match('/[^A-Z]/i',$post['referredBy'])) {
+                $errors['referredBy'][$referredByErrorNum] = 'Referal may only contain letters';
+                $referredByErrorNum++;
             }
         }
 
         // appliedDate rules conditional, if appliedBefore === 'Yes'
         if (isset($post['appliedDate'])) {
             if (!preg_match('/^\d{4}-\d{2}-\d{2}/',$post['appliedDate'])) {
-                $errors['appliedDAte'][$appliedDateErrorNum] = 'Applied before date may only contain number';
+                $errors['appliedDate'][$appliedDateErrorNum] = 'Applied before date may only contain number';
                 $appliedDateErrorNum++;
             }
         }
@@ -209,7 +207,7 @@
     
     function sendMail($to,$subject,$body,$file){
     
-        ini_set('error_reporting', 1);
+        //ini_set('error_reporting', 1);
         include_once './PHPMailer/src/Exception.php';
         include_once './PHPMailer/src/PHPMailer.php';
         include_once './PHPMailer/src/SMTP.php';
@@ -252,24 +250,3 @@
                 die;
         }
     }
-
-/*
-    if (isset($_POST)) {
-        echo filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-        echo $_POST['email'];
-        $post = array();
-        $post['firstname'] = filter_var(trim($_POST['fname']), FILTER_VALIDATE_EMAIL);
-        $post['lastname'] = '';
-        $post['phone'] = '';
-        $post['email'] = '';
-        $post['address1'] = '';
-        $post['address2'] = '';
-        $post['city'] = '';
-        $post['state'] = '';
-        $post['zip'] = '';
-        $post['referedBy'] = '';
-        $post['appliedBefore'] = '';
-        $post['appliedOn'] = '';
-        echo $body;
-    }*/
-?>

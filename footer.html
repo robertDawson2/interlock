@@ -46,27 +46,68 @@
     <script>
         new WOW().init();
         $(document).ready(function(){
-            console.log();
             if ($('#appliedBefore').val() === 'Yes') {
                 $('#appliedDate').attr('required','required');
                 $('.hideApplied').show();
             } else {
                 $('#appliedDate').removeAttr('required');
                 $('.hideApplied').hide();
-            }  
+            } 
+            
         });
-            $('#appliedBefore').on('change',function(){
-                if ($(this).val() === 'Yes') {
+
+        $('#appliedBefore').on('change',function(){
+            if ($(this).val() === 'Yes') {
                 $('#appliedDate').attr('required', 'required');
                 $('.hideApplied').show();
             } else {
                 $('#appliedDate').removeAttr('required');
                 $('.hideApplied').hide();
             }  
+        });
+
+        $('a.appFormTrigger').on('click', function() {
+            var position = $(this).data('position');
+            $('#appForm').find('#positionHolder').val(position);
+            $('#appForm').find('input[name="position"]').val(position);
+        });
+
+        $('#appForm').submit(function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            $.ajax({
+                method: 'post',
+                dataType: 'json',
+                url:'./emailHelper.php',
+                data:formData,
+                processData: false,
+                contentType: false,
+                success:(function(msg) {
+                    if ('success' in msg) {
+                        $('#appModal').modal('toggle');
+                        $("input").val('');
+                        $("#state").val('');
+                        $('.alert-success').html('Your application has been submitted.');
+                        $('.success').removeClass('d-none');
+                        window.scrollTo(0,0);
+                    } else {
+                        // hide all the error spans
+                        $.each($('#appForm span.error'), function() {
+                            if (!$(this).hasClass('d-none')) {
+                                $(this).addClass('d-none');
+                            }
+                        });
+                        // clear any old msg
+                        $('.error').html();
+                        $.each(msg, function(key, value) {
+                            // show new msg
+                            $('.'+key+'-error').removeClass('d-none').html(value);
+                        });
+
+                    }                 
+                }),
             });
+        });
     </script>
-
-
-
     </body>
 </html>
