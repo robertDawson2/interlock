@@ -14,14 +14,14 @@
     <section id='team' class="team-area sec-padding text-center">
         <div class="container">
             <div class="row mb-30px">
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-3">
                     <h1 class="title-h p-relative">
                         <span class="fw-200">Our</span><span class="color-orange"> Team</span>
                         <span class="line p-absolute bg-orange"></span>
                     </h1>
                 </div>
-                <div class="col-xs-12 col-md-8 ">
-                    <p class="team-p">Every proposal that leaves our office is typed, clearly outlining what will be done and what is and what
+                <div class="col-xs-12 col-md-7 ">
+                    <p class="team-p text-left">Every proposal that leaves our office is typed, clearly outlining what will be done and what is and what
                         is not covered by the proposal price.
                     </p>
                 </div>

@@ -224,13 +224,13 @@
                         </h2>
                         <div class='color-orange fw-600 fs-15'>MHIC #26272</div>
                         <div class="address">
-                            <p class=""><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-map"></i>2191 Greenspring Drive,  Timonium, MD 21093.</p>
+                            <p class="">2191 Greenspring Drive,  Timonium, MD 21093.</p>
                         </div>
                         <div class="address">
-                            <p class=""><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-phone"></i>  410-682-4942</p>
+                            <p class="">410-682-4942</p>
                         </div>
                         <div class="address">
-                            <p class=""><a href="mailto:consumer+5d0ba5072d34b60014b56d5d@broadly.com"><i class="bg-f6f6f6 color-orange radius-50 fs-25 mr-10px text-center icon-envelope"></i> info@interlockpaving.com</a></p>
+                            <p class=""><a href="mailto:consumer+5d0ba5072d34b60014b56d5d@broadly.com">info@interlockpaving.com</a></p>
                         </div>
                     </div>
                 </div>

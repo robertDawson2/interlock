@@ -4,12 +4,15 @@
 }
 
 #careers a{
-    background:black;
-    color:white;
+    color: white;
+    background:#af0011;
+    padding-left:40px;
+    padding-right:40px;
+}
 }
 
 #careers a:hover{
-    color:#af0011;
+    color:black;
 }
 
 #careers a:focus, #careers a:active{
