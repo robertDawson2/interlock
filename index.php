@@ -108,7 +108,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about-image wow fadeInLeft" data-wow-delay="0.4s" id="about-pic">
-                            <img src="images/Paul_Foreman.jpg" alt="about" id="about-pic">
+                            <img src="images/tempteam/Paul_Foreman.JPEG" alt="about" id="about-pic">
                         </div>
                         <div class="about-image wow fadeInLeft" data-wow-delay="0.4s" id="about-pic">
                             <img src="images/HighJumper.png" alt="about" id="highjumper">
@@ -148,16 +148,16 @@
                     <span class="line p-absolute bg-orange"></span>
                 </h1>
                 <p class="title-p txt-white">From inception to completion, we build partnerships with our clients based on trust, quality work, and outstanding customer service. </p>
-
+                <div id="imgPreview"></div>
                 <!-- grid -->
                 <div class="owl-carousel owl-theme photo-owl-carousel">
                     <!-- gallery item -->
 
-                    <img src="images/projects/17SWG.jpg" alt="image">
-
-                    <img src="images/projects/Balto_Conv_Ctr1.jpg" alt="image">
+                    <img class="grow" src="images/projects/17SWG.jpg" alt="image">
 
                     <img src="images/projects/Balto_Conv_Ctr2.jpg" alt="image">
+                    
+                    <img src="images/projects/Balto_Conv_Ctr1.jpg" alt="image">
 
                     <img src="images/projects/ChristChurchHarborApartments2.JPG" alt="image">
 
@@ -166,6 +166,10 @@
                     <img src="images/projects/DSC00008.jpg" alt="image">
                     
                     <img src="images/projects/DSC00016.jpg" alt="image">
+                    
+                    <img src="images/projects/DSC00032.JPG" alt="image">
+                    
+                    <img src="images/projects/DSC00038.JPG" alt="image">
                     
                     <img src="images/projects/HCCDragon3.jpg" alt="image">
                     

@@ -1,16 +1,24 @@
-/* Extra large devices (large desktops, 1200px and up)  */
-@media (min-width: 1400px){
+/* Extra large devices (large desktops, 992px and up)  */
+@media (min-width: 992px){
 	.container{max-width: 85%;}
 	
 	.title-p{margin: 0 0 70px 0;}
+
+	.left-job-spacer{
+		border-right: 1px solid #af0011;
+	}
+
+	#careers p {
+		min-height:350px
+	}
+
+	.line-hr{
+		display:none;
+	}
 	
 }
 
-@media (max-width: 1200px) { 
-
-}
-
-/* Large devices (desktops, 992px and up)  */
+/* Large devices (desktops, 991px and less)  */
 @media (max-width: 991px) {	
 	
 	/**** navbar-center-logo ****/
@@ -28,7 +36,14 @@
 	#careers{
         margin-top:110px;
 	}
+
+	#careers p {
+		min-height:400px;
+	}
 	
+	.left-job-spacer{
+		border-right: 1px solid #af0011;
+	}
 	
 	#testimonials{
         margin-top:100px;
@@ -46,10 +61,14 @@
 	.welcome-text{
 		margin-top: 0;
 	}
+
+	.line-hr{
+		display:none;
+	}
 	
 }
 
-/* Medium devices (tablets, 768px and up)  */
+/* Medium devices (tablets, 768px and down)  */
 @media (max-width: 767px) {
 	
 	.title-p{margin: 0 25% 70px 0;}
@@ -95,8 +114,15 @@
 		padding-left:20px;
         padding-right:20px;
 	}
-	
-	
+
+	#careers p{
+		min-height:200px;
+	}
+
+	.left-job-spacer{
+		border-right: 1px solid #af0011;
+	}
+
 	#always-contact .contact {
 		font-size: 90%;
         padding: 0 5px;
@@ -111,6 +137,11 @@
 	
 	.content{
 		margin-top:130px;
+	}
+
+	.line-hr{
+		display:block;
+		background:#af0011;
 	}
 	
 }

@@ -1,6 +1,6 @@
 <!-- Large modal -->
 <div class="modal fade " id="appModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog" style="min-width:80%;">
     <div class="modal-content ">
     <form action="" method="POST" enctype="multipart/form-data" id="appForm">
                 <div class="row">

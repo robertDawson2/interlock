@@ -80,19 +80,26 @@ $(function () {
         responsive: {
             0: {
                 items: 1,
-                nav: false
+                nav: true,
+                navText: [
+                    "<i class='fa fa-chevron-left'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right'></i>"
+                ]
             },
-            600: {
+            767: {
                 items: 3,
                 nav: false
             },
             1000: {
                 items: 5,
                 nav: false,
-                loop: true
+                loop: true,
+                autoHeight:true
             }
         }
     });
+
+    
 
     /* team-area slider */
     $('.team-area .owl-carousel').owlCarousel({
@@ -184,3 +191,4 @@ $(window).on("load", function () {
         console.log('#' + urlHash);
     }
 });
+

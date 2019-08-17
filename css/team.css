@@ -39,7 +39,7 @@
     line-height: 30px;
 }
 
-.modal-content{margin-top:50px;}
+.modal-content{margin-top:40px;}
 
 a img.img100{
     width:100%;
@@ -86,6 +86,7 @@ a img.img100{
     bottom: 20px;
     z-index: 9;
   }
+  
 
 @media screen and (max-width: 1000px) {
     #team{

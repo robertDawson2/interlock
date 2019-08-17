@@ -32,7 +32,7 @@
                     <div data-toggle="modal" data-target="#presidentModal" class="hover-red">
                         <div class="img-plus-sign"></div>
                         <a href="#"  class="">
-                            <img alt="team" src="images/tempteam/Paul_Foreman.jpg" class="img100">
+                            <img alt="team" src="images/tempteam/Paul_Foreman.JPEG" class="img100">
                         </a>
                     </div>
                     <h5 class="mb-0px mt-10px fw-600">Paul Foreman</h5>
@@ -48,13 +48,15 @@
                                     </button>
                                     <div class="row">
                                         <div class="col-xs-12 col-md-4">
-                                            <img alt="team" src="images/tempteam/Paul_Foreman.jpg" class="">
+                                            <img alt="team" src="images/tempteam/Paul_Foreman.JPEG" class="">
                                         </div>
                                         <div class="col-xs-12 col-md-1"></div>
                                         <div class="col-xs-12 col-md-7 text-left">
-                                            <h4 class="modal-title color-orange fw-600" id="presidentModal">Paul Foreman</h5>
+                                            <h4 class="modal-title color-orange fw-600  mt-30px" id="presidentModal">Paul Foreman</h4>
                                             <h5 class="modal-title" id="presidentModal">President</h5>
-                                            </br> 
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <br> 
                                             <p class="txt-white">
                                                 Paul Foreman bio goes here
                                             </p>
@@ -69,7 +71,7 @@
                 
                 <div class="col-xs-12 col-md-4">
                     <a href="#" data-toggle="modal" data-target="#projectMngrModal">
-                        <img alt="team" src="./images/tempteam/Chris_Turner.jpg" class="img100">
+                        <img alt="team" src="./images/tempteam/Chris_Turner.JPEG" class="img100">
                         <div class="img-plus-sign"></div>
 
                     </a>
@@ -85,13 +87,15 @@
                                     </button>
                                     <div class="row">
                                         <div class="col-xs-12 col-md-4">
-                                            <img alt="team" src="./images/tempteam/Chris_Turner.jpg" class="">
+                                            <img alt="team" src="./images/tempteam/Chris_Turner.JPEG" class="">
                                         </div>
                                         <div class="col-xs-12 col-md-1"></div>
                                         <div class="col-xs-12 col-md-7 text-left">
-                                            <h4 class="modal-title color-orange fw-600" id="presidentModal">Chris Turner</h5>
+                                            <h4 class="modal-title color-orange fw-600 mt-30px" id="presidentModal">Chris Turner</h4>
                                             <h5 class="modal-title" id="presidentModal">Residential Project Manager</h5>
-                                            </br>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <br>
                                             <p class="txt-white">
                                                 Chris Turner bio goes here
                                             </p>
@@ -128,9 +132,11 @@
                                         </div>
                                         <div class="col-xs-12 col-md-1"></div>
                                         <div class="col-xs-12 col-md-7 text-left">
-                                            <h4 class="modal-title color-orange fw-600" id="presidentModal">Gabriel Faber</h5>
+                                            <h4 class="modal-title color-orange fw-600 mt-30px">Gabriel Faber</h4>
                                             <h5 class="modal-title" id="presidentModal">Production Manager</h5>
-                                            </br>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <br>
                                             <p class="txt-white">
                                                 Gabriel Faber bio goes here
                                             </p>
@@ -143,10 +149,10 @@
                 </div>
                 <div class="col-xs-12 col-md-4">
                         <a href="#" data-toggle="modal" data-target="#operationsModal">
-                            <img alt="team" src="./images/tempteam/Mike_Farrell.jpg" class="img100">
+                            <img alt="team" src="./images/tempteam/Steve_Losin.JPEG" class="img100">
                             <div class="img-plus-sign"></div>
                         </a>
-                    <h5 class="mb-0px mt-10px fw-600">Mike Farrell</h5>
+                    <h5 class="mb-0px mt-10px fw-600">Steve Losin</h5>
                     <p class="mb-5px">Operations & Safety</p>
                     <!-- operations Modal -->
                     <div class="modal fade" id="operationsModal" role="dialog" aria-labelledby="operationsModal" aria-hidden="true">
@@ -157,17 +163,21 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-4">
-                                            <img alt="team" src="./images/tempteam/Mike_Farrell.jpg" class="">
+                                        <div class="col-xs-12 col-md-4 ">
+                                            <img alt="team" src="./images/tempteam/Steve_Losin.JPEG" class="">
                                             
                                         </div>
                                         <div class="col-xs-12 col-md-1"></div>
                                         <div class="col-xs-12 col-md-7 text-left">
-                                            <h4 class="modal-title color-orange fw-600" id="presidentModal">Mike Farrell</h5>
-                                            <h5 class="modal-title" id="presidentModal">Operations & Safety</h5>
-                                            </br>
+                                            <h4 class="modal-title color-orange fw-600 mt-30px">Steve Losin</h4>
+                                            <h5 class="modal-title">Operations & Safety</h5>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <br>
                                             <p class="txt-white">
-                                                Mike Farrell bio goes here
+                                                Steve Losin joined Interlock 2019 as our Commercial Project Manager and is responsible for the complete delivery of our commercial projects beginning with cost estimating/bidding and continuing through project delivery and turnover.  Steve brings over 10 years of multifaceted construction experience ranging from structural engineering to real estate development. 
+Prior to joining Interlock, Steve worked as a Structural Engineer and Project Manager at a Maryland based engineering firm and most recently a Development Project Manager at the Baltimore based Senior Housing Developer, Erickson Living. 
+Steve holds a degree in Civil Engineering from University of Maryland and is a licensed professional engineer in the state of Maryland.
                                             </p>
                                         </div>
                                     </div>
