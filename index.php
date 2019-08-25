@@ -38,10 +38,63 @@
                 <div class="container">
                     <div class="welcome-text">
                         <h4 class="txt-white fw-400 mb-20px">Our Mission.  Our Promise.</h4>
-                        <h1 class="mb-20px color-fff fw-400">Our <span class="color-orange fw-800">Committment.</span></h1>
+                        <h1 class="mb-20px color-fff fw-400">Our <span class="color-orange fw-800">Commitment.</span></h1>
                         <p class="txt-white">At Interlock, we work together to ensure, maintain, and continuously improve our high
                             standards for quality and service as a leader in the architectural paving industry.</p>
-                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px" href="#" data-scroll-nav='4'>Get a quote</a>
+                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px txt-white" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
+                    </div>
+                    <div class="modal fade" id="quote-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" style="min-width:60%;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLabel">Request A <span class="color-orange">Quote</span></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <form id="quote-form" method="post">
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <input type="hidden" name="quote">
+                                            <label for="firstname">First Name <span class="color-orange">*</span></label>
+                                            <span class="fname-error d-none error"></span>
+                                            <input type="text" name="firstname" id="firstName" class="form-control">
+                                            
+                                            <label for="phone">Phone Number <span class="color-orange">*</span></label>
+                                            <span class="phone-error d-none error"></span>
+                                            <input type="text" name="phone" id="phone" maxlength="10" class="form-control">
+                                            
+                                            <label for="propertyType">Property Type <span class="color-orange">*</span></label>
+                                            <span class="propertyType-error d-none error"></span>
+                                            <select name="propertyType" class="form-control" id="propertyType">
+                                                <option value="">Choose One</option>
+                                                <option value="residential">Residential</option>
+                                                <option value="commercial">Commercial</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label for="lastname">Last Name<span class="color-orange">*</span></label>
+                                            <span class="lname-error d-none error"></span>
+                                            <input type="text" name="lastname" id="lastName" class="form-control">
+
+                                            <label for="email">Email Address <span class="color-orange">*</span></label>
+                                            <span class="email-error d-none error"></span>
+                                            <input type="email" name="email" id="email" class="form-control">
+                                            
+                                            <label for="message">Message <span class="color-orange">*</span></label>
+                                            <span class="message-error d-none error"></span>
+                                            <textarea name="message" id="message" class="form-control" style="min-height:100px;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-success">Request Quote</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

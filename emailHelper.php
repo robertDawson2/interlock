@@ -2,66 +2,156 @@
     $emailSent = false;
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         include 'loadView.php';
-        $post = array();
-        $post['firstname'] = clean_input($_POST['fname']);
-        $post['lastname'] = clean_input($_POST['lname']);
-        $post['phone'] = clean_input($_POST['phone']);
-        $post['email'] = clean_input($_POST['email']);
-        $post['address1'] = clean_input($_POST['addr1']);
-        if ($_POST['addr2'] !== '') {
-            $post['address2'] = clean_input($_POST['addr2']);
-        }
-        $post['city'] = clean_input($_POST['city']);
-        $post['state'] = clean_input($_POST['state']);
-        $post['zip'] = clean_input($_POST['zip']);
-        // position not coming through when added via post its oddS
-        $post['position'] = clean_input($_POST['position']);
-        if ($_POST['referredBy'] !== '') {
-            $post['referredBy'] = clean_input($_POST['referredBy']);
-        }
-        if ($_POST['appliedBefore'] === 'Yes') {
-            $post['appliedDate'] = clean_input($_POST['appliedDate']);
-        }
-        if (isset($_FILES['resume'])) {
-            $post['resume'] = $_FILES['resume'];
-        }
-        
-        $errors = validateApplication($post);
+        if (isset($_POST['quote'])) {
+            $post['firstname'] = clean_input($_POST['firstname']);
+            $post['lastname'] = clean_input($_POST['lastname']);
+            $post['phone'] = clean_input($_POST['phone']);
+            $post['email'] = clean_input($_POST['email']);
+            $post['propertyType'] = clean_input($_POST['propertyType']);
+            $post['message'] = clean_input($_POST['message']);
+            
+            $errors = validateQuote($post);
 
-        $parentDir = realpath('../');
-        $uploadLoc = "$parentDir/uploads/applications/";
-        if (!file_exists($uploadLoc)) {
-            mkdir($uploadLoc, 0777, true);
-        }
-        $fileName = basename($_FILES['resume']['name']);
-        $tmpPath = $_FILES['resume']['tmp_name'];
-        $destination = $uploadLoc . $fileName;
-
-        if (is_uploaded_file($tmpPath)) {
-            if (!copy($tmpPath, $destination)) {
-                $errors['upload'] = 'There was an error uploading the resume.';
+            // validation ok
+            if (!is_array($errors)) {
+                $load = new Load;
+                $body = $load->view('emailTemplates/quoteEmail.php',$post, true);
+                //send email
+                sendMail('info@interlock.com','New Quote Request',$body, null, 'cturner@interlock.com');
+                //clear form
+                $_POST = array();
+                echo json_encode(array('success' => 'sent'));
+            } else {
+                echo json_encode($errors);
             }
-        }
-        // validation ok & file uploaded successfully
-        if (!is_array($errors)) {
-            $load = new Load;
-            $body = $load->view('emailTemplates/applicationEmail.php',$post, true);
-            //send email
-            sendMail('careers@interlock.com','New Application',$body,$destination);
-            //clear form
-            $_POST = array();
-            echo json_encode(array('success' => 'sent'));
         } else {
-            echo json_encode($errors);
+            $post = array();
+            $post['firstname'] = clean_input($_POST['fname']);
+            $post['lastname'] = clean_input($_POST['lname']);
+            $post['phone'] = clean_input($_POST['phone']);
+            $post['email'] = clean_input($_POST['email']);
+            $post['address1'] = clean_input($_POST['addr1']);
+            if ($_POST['addr2'] !== '') {
+                $post['address2'] = clean_input($_POST['addr2']);
+            }
+            $post['city'] = clean_input($_POST['city']);
+            $post['state'] = clean_input($_POST['state']);
+            $post['zip'] = clean_input($_POST['zip']);
+            $post['position'] = clean_input($_POST['position']);
+            if ($_POST['referredBy'] !== '') {
+                $post['referredBy'] = clean_input($_POST['referredBy']);
+            }
+            if ($_POST['appliedBefore'] === 'Yes') {
+                $post['appliedDate'] = clean_input($_POST['appliedDate']);
+            }
+            if (isset($_FILES['resume'])) {
+                $post['resume'] = $_FILES['resume'];
+            }
+            
+            $errors = validateApplication($post);
+
+            $parentDir = realpath('../');
+            $uploadLoc = "$parentDir/uploads/applications/";
+            if (!file_exists($uploadLoc)) {
+                mkdir($uploadLoc, 0777, true);
+            }
+            $fileName = basename($_FILES['resume']['name']);
+            $tmpPath = $_FILES['resume']['tmp_name'];
+            $destination = $uploadLoc . $fileName;
+
+            if (is_uploaded_file($tmpPath)) {
+                if (!copy($tmpPath, $destination)) {
+                    $errors['upload'] = 'There was an error uploading the resume.';
+                }
+            }
+            // validation ok & file uploaded successfully
+            if (!is_array($errors)) {
+                $load = new Load;
+                $body = $load->view('emailTemplates/applicationEmail.php',$post, true);
+                //send email
+                sendMail('careers@interlock.com','New Application',$body,$destination);
+                //clear form
+                $_POST = array();
+                echo json_encode(array('success' => 'sent'));
+            } else {
+                echo json_encode($errors);
+            }
         }
     }
 
     function clean_input($input)
     {
         $input = trim($input);
+        $input = strip_tags($input);
         $input = stripslashes($input);
         $input = htmlspecialchars($input);
         return $input;
+    }
+    
+    function validateQuote($post)
+    {
+        $fnameErrorNum = $lnameErrorNum = $phoneErrorNum = $emailErrorNum = $propertyErrorNum = $messageErrorNum = 0;
+        
+        // first name rules
+        if (empty($post['firstname'])) {
+            $errors['fname'][$fnameErrorNum] = 'Please enter a first name';
+            $fnameErrorNum++;
+        } 
+        if (preg_match('/[^a-zA-Z\s]/',$post['firstname'])) {
+            $errors['fname'][$fnameErrorNum] = 'First name may only contain letters and spaces';
+            $fnameErrorNum++;
+        }
+
+        // last name rules
+        if (empty($post['lastname'])) {
+            $errors['lname'][$lnameErrorNum] = 'Please enter a last name';
+            $lnameErrorNum++;
+        }
+        if (preg_match('/[^a-zA-Z\s]/',$post['lastname'])) {
+            $errors['lname'][$lnameErrorNum] = 'Last name may only contain letters and spaces';
+            $lnameErrorNum++;
+        }
+        
+        // phone rules
+        if (empty($post['phone'])) {
+            $errors['phone'][$phoneErrorNum] = 'Please enter a phone number';
+            $phoneErrorNum++;
+        }
+        if (preg_match('/[^\d]/',$post['phone'])) {
+            $errors['phone'][$phoneErrorNum] = 'Phone number may only contain numbers';
+            $phoneErrorNum++;
+        }
+
+        // email rules
+        if (empty($post['email'])) {
+            $errors['email'][$emailErrorNum] = 'Please enter an email address';
+            $emailErrorNum++;
+        }
+        if (!filter_var($post['email'], FILTER_VALIDATE_EMAIL)) {
+            $errors['email'][$emailErrorNum] = 'Email must be a valid email address';
+            $emailErrorNum++;
+        }
+
+        // propertyType rules
+        if (empty($post['propertyType'])) {
+            $errors['propertyType'][$propertyErrorNum] = 'Please select an Property Type';
+            $propertyErrorNum++;
+        }
+        if (preg_match('/[^a-zA-Z]/',$post['propertyType'])) {
+            $errors['propertyType'][$propertyErrorNum] = 'Invalid Property Type';
+            $propertyErrorNum++;
+        }
+        
+        // message rules
+        if (empty($post['message'])) {
+            $errors['message'][$messageErrorNum] = 'Please enter a message';
+            $messageErrorNum++;
+        }
+        if (empty($errors)) {
+            return true;
+        } else {
+            return $errors;
+        }
     }
 
     function validateApplication($post)
@@ -205,7 +295,7 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     
-    function sendMail($to,$subject,$body,$file){
+    function sendMail($to,$subject,$body,$file=null,$cc=null){
     
         //ini_set('error_reporting', 1);
         include_once './PHPMailer/src/Exception.php';
@@ -217,24 +307,28 @@
             //Server settings
             $mail->SMTPDebug = 0;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'asp-submit.reflexion.net';  // Specify main and backup SMTP servers
+            $mail->Host = 'asp-submit.reflexion.net';             // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'Webservice@net2sky.com';                 // SMTP username
-            $mail->Password = '2019$Ws!';                           // SMTP password
+            $mail->Username = 'Webservice@net2sky.com';           // SMTP username
+            $mail->Password = '2019$Ws!';                         // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
     
             //Recipients
             $mail->setFrom('Interlock@net2sky.com');
             $mail->addAddress($to);     // Add a recipient
-            //$mail->addAddress('ellen@example.com');               // Name is optional
+            //$mail->addAddress('ellen@example.com');             // Name is optional
             //$mail->addReplyTo('info@example.com', 'Information');
-            //$mail->addCC('cc@example.com');
+            if ($cc !== null) {
+                $mail->addCC('cc@example.com');
+            }
             //$mail->addBCC('bcc@example.com');
     
             //Attachments
-            $mail->addAttachment($file);         // Add attachments
-            //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+            if ($file !== null) {
+                $mail->addAttachment($file);                      // Add attachments
+            }
+            //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');  // Optional name
     
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML

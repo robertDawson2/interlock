@@ -1473,6 +1473,15 @@ h6{
     outline: none;
 }
 
+#quote-form{
+    padding:20px 20px 0 20px;
+}
+
+#quote-form .error{
+    font-size:smaller;
+    color:#af0011;
+}
+
 .contact-form input[type='submit']{
     padding: 10px 25px;
     border: 1px solid #8c352b;
