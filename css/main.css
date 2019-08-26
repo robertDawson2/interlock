@@ -1322,8 +1322,8 @@ h6{
 }
 
 .owl-carousel .owl-item img {
-    width: auto;
-    height: 100%;
+    height: 80%;
+    margin-top: 10%;
 }
 /*----------------------------------------------------
                                         End work-area
@@ -1639,3 +1639,14 @@ h6{
 
 /* chat button */
 
+.owl-item.active.center {
+	z-index: 99;
+	transform: scale(1.05);
+}
+.owl-item.active.center img {
+	height: 90%;
+	margin-top: 5%;
+	border: 2px solid white;
+	box-shadow: 0 0 10px #444;
+	
+}

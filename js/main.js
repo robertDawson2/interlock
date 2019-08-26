@@ -74,6 +74,7 @@ $(function () {
     $('.photo-owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
+	center: true,
         lazyLoad: true,
         dots: true,
         responsiveClass: true,
@@ -93,8 +94,7 @@ $(function () {
             1000: {
                 items: 5,
                 nav: false,
-                loop: true,
-                autoHeight:true
+                loop: true
             }
         }
     });
@@ -106,6 +106,7 @@ $(function () {
         items: 4,
         loop: true,
         margin: 30,
+	lazyLoad: true,
         autoplay: false,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
