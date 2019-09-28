@@ -41,7 +41,7 @@
                         <h1 class="mb-20px color-fff fw-400">Our <span class="color-orange fw-800">Commitment.</span></h1>
                         <p class="txt-white">At Interlock, we work together to ensure, maintain, and continuously improve our high
                             standards for quality and service as a leader in the architectural paving industry.</p>
-                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px txt-white" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
+                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
                     </div>
                     <div class="modal fade" id="quote-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" style="min-width:60%;" role="document">
@@ -105,7 +105,7 @@
         <!-- ==================================================
                                               numbers
 ================================================== -->
-        <section class="numbers text-center hide-on-mobile">
+        <section class="numbers text-center">
             <div class="overlay-bg-80 sec-padding">
                 <div class="container">
                     <div class="row">
@@ -148,7 +148,7 @@
     <!-- ==================================================
                                                       about-area
     ================================================== -->
-    <section id='about' class="about-area sec-padding bg-f6f6f6 hide-on-mobile" data-scroll-index="2">
+    <section id='about' class="about-area sec-padding bg-f6f6f6" data-scroll-index="2">
             <div class="container">
                 <h1 class="title-h p-relative">
                     <span class="fw-200">About</span><span class="color-orange"> Interlock Paving!</span>

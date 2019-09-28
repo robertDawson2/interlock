@@ -366,7 +366,8 @@ h6{
     font-weight: 400;
     transform: perspective(1px)translateX(0px);
     transition: all 0.2s ease 0s;
-    overflow: hidden
+    overflow: hidden;
+    color: white !important;
 }
 
 .main-btn:before{
@@ -403,7 +404,7 @@ h6{
     background-color: #af0011;
     color: #fff;
 }
-.btn-1:hover{color: #333;}
+.btn-1:hover{color: #333 !important;}
 
 .btn-1:hover:before{transform: scaleX(1);}
 
@@ -1322,7 +1323,7 @@ h6{
 }
 
 .owl-carousel .owl-item img {
-    height: 80%;
+    height: 50%;
     margin-top: 10%;
 }
 /*----------------------------------------------------
@@ -1638,13 +1639,16 @@ h6{
 
 
 /* chat button */
+.owl-stage-outer{
+    height:70%;
+}
 
 .owl-item.active.center {
 	z-index: 99;
 	transform: scale(1.05);
 }
 .owl-item.active.center img {
-	height: 90%;
+	height: 60%;
 	margin-top: 5%;
 	border: 2px solid white;
 	box-shadow: 0 0 10px #444;

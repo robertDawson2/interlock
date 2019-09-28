@@ -74,27 +74,35 @@ $(function () {
     $('.photo-owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
-	center: true,
+        center: true,
         lazyLoad: true,
-        dots: true,
+        dots: false,
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
                 nav: true,
                 navText: [
-                    "<i class='fa fa-chevron-left'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right'></i>"
+                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-fff'></i>"
                 ]
             },
             767: {
                 items: 3,
-                nav: false
+                nav: true,
+                navText: [
+                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-fff'></i>"
+                ]
             },
             1000: {
                 items: 5,
-                nav: false,
-                loop: true
+                nav: true,
+                loop: true,
+                navText: [
+                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-fff'></i>"
+                ]
             }
         }
     });
