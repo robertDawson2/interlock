@@ -2,7 +2,10 @@ $(function () {
     $("nav .nav-item a").on('click', function () {
         $("section[data-scroll-index=" + $(this).data('scroll-nav') + "]").removeClass('hide-on-mobile');
     });
-
+    var screenWidth = $(window).width();
+    if (screenWidth >= 800) {
+        $('.video-background').attr('autoplay', 'autoplay');
+    }
     "use strict";
     /* smooth scroll
      -------------------------------------------------------*/
@@ -74,27 +77,35 @@ $(function () {
     $('.photo-owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
-	center: true,
+	    center: true,
         lazyLoad: true,
-        dots: true,
+        dots: false,
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
                 nav: true,
                 navText: [
-                    "<i class='fa fa-chevron-left'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right'></i>"
+                    "<i class='fa fa-chevron-left color-aaa'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-aaa'></i>"
                 ]
             },
             767: {
                 items: 3,
-                nav: false
+                nav: true,
+                navText: [
+                    "<i class='fa fa-chevron-left color-aaa'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-aaa'></i>"
+                ]
             },
             1000: {
                 items: 5,
-                nav: false,
-                loop: true
+                nav: true,
+                loop: true,
+                navText: [
+                    "<i class='fa fa-chevron-left color-aaa'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-aaa'></i>"
+                ]
             }
         }
     });

@@ -32,7 +32,7 @@
     ================================================== -->
         <section class="welcome-video p-relative o-hidden width-100" data-scroll-index="1">
             <video loop muted poster="#" class="video-background">
-                <source src="Galaxy%20Video.MP4" type="video/mp4">
+                <source src="images/projectsNew/Patriots Plaza Edited.mp4" type="video/mp4">
             </video>
             <div class="overlay-bg-50 sec-padding flex-center text-center">
                 <div class="container">
@@ -41,7 +41,7 @@
                         <h1 class="mb-20px color-fff fw-400">Our <span class="color-orange fw-800">Commitment.</span></h1>
                         <p class="txt-white">At Interlock, we work together to ensure, maintain, and continuously improve our high
                             standards for quality and service as a leader in the architectural paving industry.</p>
-                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px txt-white" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
+                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
                     </div>
                     <div class="modal fade" id="quote-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" style="min-width:60%;" role="document">
@@ -105,7 +105,7 @@
         <!-- ==================================================
                                               numbers
 ================================================== -->
-        <section class="numbers text-center hide-on-mobile">
+        <section class="numbers text-center">
             <div class="overlay-bg-80 sec-padding">
                 <div class="container">
                     <div class="row">
@@ -148,7 +148,7 @@
     <!-- ==================================================
                                                       about-area
     ================================================== -->
-    <section id='about' class="about-area sec-padding bg-f6f6f6 hide-on-mobile" data-scroll-index="2">
+    <section id='about' class="about-area sec-padding bg-f6f6f6" data-scroll-index="2">
             <div class="container">
                 <h1 class="title-h p-relative">
                     <span class="fw-200">About</span><span class="color-orange"> Interlock Paving!</span>
@@ -206,29 +206,29 @@
                 <div class="owl-carousel owl-theme photo-owl-carousel">
                     <!-- gallery item -->
 
-                    <img class="grow" src="images/projects/17SWG.jpg" alt="image">
+                    <img class="grow" src="images/projectsNew/17swg.jpg" alt="image">
 
-                    <img src="images/projects/Balto_Conv_Ctr2.jpg" alt="image">
+                    <img src="images/projectsNew/balto_conv_ctr1.jpg" alt="image">
                     
-                    <img src="images/projects/Balto_Conv_Ctr1.jpg" alt="image">
+                    <img src="images/projectsNew/balto_conv_ctr2.jpg" alt="image">
 
-                    <img src="images/projects/ChristChurchHarborApartments2.JPG" alt="image">
+                    <img src="images/projectsNew/mdhouseofdelegates1.jpg" alt="image">
 
-                    <img src="images/projects/DeckerQuadEntrance.jpg" alt="image">
+                    <img src="images/projectsNew/deckerquadentrance.jpg" alt="image">
 
-                    <img src="images/projects/DSC00008.jpg" alt="image">
+                    <img src="images/projectsNew/dsc00008.jpg" alt="image">
                     
-                    <img src="images/projects/DSC00016.jpg" alt="image">
+                    <img src="images/projectsNew/dsc00016.jpg" alt="image">
                     
-                    <img src="images/projects/DSC00032.JPG" alt="image">
+                    <img src="images/projectsNew/dsc00032.jpg" alt="image">
                     
-                    <img src="images/projects/DSC00038.JPG" alt="image">
+                    <img src="images/projectsNew/dsc00038.jpg" alt="image">
                     
-                    <img src="images/projects/HCCDragon3.jpg" alt="image">
+                    <img src="images/projectsNew/HCCDragon3.jpg" alt="image">
                     
-                    <img src="images/projects/pooldeck-kelly.jpg" alt="image">
+                    <img src="images/projectsNew/pooldeck-kelly.jpg" alt="image">
                     
-                    <img src="images/projects/UD01-21-08-B.jpg" alt="image">
+                    <img src="images/projectsNew/comm1.jpg" alt="image">
                     
                     <img src="images/projects/WatersEdge1.jpg" alt="image">
                 </div>
