@@ -125,10 +125,17 @@
                                                 Steve Losin joined Interlock in 2019 as our Commercial Project Manager and is responsible for the complete 
                                                 delivery of our commercial projects beginning with cost estimating/bidding and continuing through project 
                                                 delivery and turnover.  Steve brings over 10 years of multifaceted construction experience ranging from 
-                                                structural engineering to real estate development. 
+                                                structural engineering to real estate development.
+                                            </p>
+                                            <br>
+                                            <p class="txt-white">
                                                 Prior to joining Interlock, Steve worked as a Structural Engineer and Project Manager at a Maryland based 
                                                 engineering firm and most recently a Development Project Manager at the Baltimore based Senior Housing Developer, 
-                                                Erickson Living. Steve holds a degree in Civil Engineering from University of Maryland and is a 
+                                                Erickson Living. 
+                                            </p>
+                                            <br>
+                                            <p class="txt-white">
+                                                Steve holds a degree in Civil Engineering from University of Maryland and is a 
                                                 licensed professional engineer in the state of Maryland.
                                             </p>
                                         </div>
@@ -168,7 +175,22 @@
                                         <div class="col-sm-12 col-md-7">
                                             <br>
                                             <p class="txt-white">
-                                                Chris Turner bio goes here
+                                                Chris joined the Interlock team in 1985 as one of our first full time team members and has held multiple
+                                                positions ever since. In Chris’ current role, he serves as Interlock’s Residential Project Manager,
+                                                responsible for leading our residential sales team and the holistic delivery of our residential construction
+                                                projects. Chris ensures all of Interlock’s residential construction project are delivered on time, within
+                                                budget, and meet or exceed our customer’s exceptions.
+                                            </p>
+                                            <br>
+                                            <p class="txt-white">
+                                                With over 35 years of experience in the architectural and interlocking paving industry, Chris is an expert
+                                                in industry standards and best practices which ensure that all of Interlock’s project, no matter the size or
+                                                scale, meet our company values and our customers’ goals.
+                                            </p>
+                                            <br>
+                                            <p class="txt-white">
+                                                Prior to his current roles, Chris has served has as a Crew Foreman, Production Manager, and Equipment
+                                                Operator among many other positions.
                                             </p>
                                         </div>
                                     </div>
@@ -202,7 +224,17 @@
                                         <div class="col-sm-12 col-md-7">
                                             <br>
                                             <p class="txt-white">
-                                                Gabriel Faber bio goes here
+                                                As Interlock’s Production Manager, Gabriel is responsible for ensuring that our field crews are delivering
+                                                projects on time, per design requirements, and maintain our standards for craftsmanship. Gabriel
+                                                brings over 30 years of construction experience and over 28 years of experience in the interlocking and
+                                                architectural paving industry to our team.
+                                            </p>
+                                            <br>
+                                            <p class="txt-white">
+                                                Gabriel has been with Interlock since 1991, originally joining the company as a summer intern. Since
+                                                joining the company, Gabriel has continued to increase our standards for project coordination and
+                                                quality as well as training and mentoring our new employees to ensure that our entire field team
+                                                understands our company’s high standards for excellence.
                                             </p>
                                         </div>
                                     </div>

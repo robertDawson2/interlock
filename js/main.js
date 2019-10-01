@@ -86,16 +86,16 @@ $(function () {
                 items: 1,
                 nav: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-aaa'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-aaa'></i>"
+                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-fff'></i>"
                 ]
             },
             767: {
                 items: 3,
                 nav: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-aaa'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-aaa'></i>"
+                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-fff'></i>"
                 ]
             },
             1000: {
@@ -103,8 +103,8 @@ $(function () {
                 nav: true,
                 loop: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-aaa'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-aaa'></i>"
+                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
+                    "<i class='fa fa-chevron-right color-fff'></i>"
                 ]
             }
         }
