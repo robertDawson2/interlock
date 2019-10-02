@@ -355,6 +355,12 @@ h6{
 .z-index-3{z-index: 3;}
 
 /***** buttons *****/
+#quote-btn{
+    color:white !important;
+}
+#quote-btn:hover{
+    color:black !important;
+}
 .main-btn{
     display: inline-block;
     text-decoration: none;
@@ -367,11 +373,7 @@ h6{
     transform: perspective(1px)translateX(0px);
     transition: all 0.2s ease 0s;
     overflow: hidden;
-    color:white !important;
-}
-
-.main-btn:hover{
-    color:black !important;
+    
 }
 
 .main-btn:before{
@@ -754,7 +756,7 @@ h6{
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 900%;
     height: 100vh;
     z-index: -100;
     background:black;

@@ -198,9 +198,18 @@ $(window).on("load", function () {
     var urlHash = window.location.href.split("#")[1];
     if (urlHash &&  $('#' + urlHash).length ){
         $('html,body').animate({
-            scrollTop: $('#' + urlHash).offset().top
-        }, 4000);
-        console.log('#' + urlHash);
+            scrollTop: $('#' + urlHash).offset().top - 60
+        }, 1000);
     }
+    $('.scroll').click(function () {
+        urlHash = $(this).attr('href').split("#")[1];
+        if (urlHash && $('#' + urlHash).length) {
+            $('html,body').animate({
+                scrollTop: $('#' + urlHash).offset().top - 60
+            }, 1000);
+            console.log($('#' + urlHash));
+        }
+    });
 });
-
+$(document).ready(function(){
+});
