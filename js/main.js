@@ -1,7 +1,4 @@
 $(function () {
-    $("nav .nav-item a").on('click', function () {
-        $("section[data-scroll-index=" + $(this).data('scroll-nav') + "]").removeClass('hide-on-mobile');
-    });
     var screenWidth = $(window).width();
     if (screenWidth >= 800) {
         $('.video-background').attr('autoplay', 'autoplay');

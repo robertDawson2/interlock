@@ -140,9 +140,9 @@
                     <div class="col-sm-12 col-md-3 "></div>
                     <div class="col-md-3 hideApplied"></div>
                     <div class="col-sm-12 col-md-6">
-                        <label for="resume">Upload Resume<span class="color-orange"> *</span></label>
+                        <label for="resume">Upload Resume</label>
                         <span class="resume-error d-none error"></span>
-                        <input type="file" name="resume" required />
+                        <input type="file" name="resume"/>
                     </div>
                 </div>
                 <br/>

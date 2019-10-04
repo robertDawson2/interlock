@@ -50,18 +50,20 @@
             
             $errors = validateApplication($post);
 
-            $parentDir = realpath('../');
-            $uploadLoc = "$parentDir/uploads/applications/";
-            if (!file_exists($uploadLoc)) {
-                mkdir($uploadLoc, 0777, true);
-            }
-            $fileName = basename($_FILES['resume']['name']);
-            $tmpPath = $_FILES['resume']['tmp_name'];
-            $destination = $uploadLoc . $fileName;
-
-            if (is_uploaded_file($tmpPath)) {
-                if (!copy($tmpPath, $destination)) {
-                    $errors['upload'] = 'There was an error uploading the resume.';
+            if (isset($post['resume']['name']) && $post['resume']['size'] > 0) {
+                $parentDir = realpath('../');
+                $uploadLoc = "$parentDir/uploads/applications/";
+                if (!file_exists($uploadLoc)) {
+                    mkdir($uploadLoc, 0777, true);
+                }
+                $fileName = basename($_FILES['resume']['name']);
+                $tmpPath = $_FILES['resume']['tmp_name'];
+                $destination = $uploadLoc . $fileName;
+    
+                if (is_uploaded_file($tmpPath)) {
+                    if (!copy($tmpPath, $destination)) {
+                        $errors['upload'] = 'There was an error uploading the resume.';
+                    }
                 }
             }
             // validation ok & file uploaded successfully
@@ -69,7 +71,7 @@
                 $load = new Load;
                 $body = $load->view('emailTemplates/applicationEmail.php',$post, true);
                 //send email
-                sendMail('careers@interlock.com','New Application',$body,$destination);
+                sendMail('ian@donorsearch.net','New Application',$body,$destination);
                 //clear form
                 $_POST = array();
                 echo json_encode(array('success' => 'sent'));
@@ -274,7 +276,7 @@
         }
 
         // file validation
-        if (isset($post['resume'])) {
+        if (isset($post['resume']) && $post['resume']['size'] > 0) {
             if (!in_array($post['resume']['type'], $allowedFileTypes)) {
                 $errors['resume'][$resumeErrorNum] = 'File type not supported';
                 $resumeErrorNum++;
