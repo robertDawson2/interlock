@@ -71,7 +71,7 @@
                 $load = new Load;
                 $body = $load->view('emailTemplates/applicationEmail.php',$post, true);
                 //send email
-                sendMail('ian@donorsearch.net','New Application',$body,$destination);
+                sendMail('careers@interlock.com','New Application',$body,$destination);
                 //clear form
                 $_POST = array();
                 echo json_encode(array('success' => 'sent'));
@@ -96,7 +96,7 @@
         
         // first name rules
         if (empty($post['firstname'])) {
-            $errors['fname'][$fnameErrorNum] = 'Please enter a first name';
+            $errors['fname'][$fnameErrorNum] = "Please enter a first name\n";
             $fnameErrorNum++;
         } 
         if (preg_match('/[^a-zA-Z\s]/',$post['firstname'])) {
@@ -106,7 +106,7 @@
 
         // last name rules
         if (empty($post['lastname'])) {
-            $errors['lname'][$lnameErrorNum] = 'Please enter a last name';
+            $errors['lname'][$lnameErrorNum] = "Please enter a last name\n";
             $lnameErrorNum++;
         }
         if (preg_match('/[^a-zA-Z\s]/',$post['lastname'])) {
@@ -116,7 +116,7 @@
         
         // phone rules
         if (empty($post['phone'])) {
-            $errors['phone'][$phoneErrorNum] = 'Please enter a phone number';
+            $errors['phone'][$phoneErrorNum] = "Please enter a phone number\n";
             $phoneErrorNum++;
         }
         if (preg_match('/[^\d]/',$post['phone'])) {
@@ -126,7 +126,7 @@
 
         // email rules
         if (empty($post['email'])) {
-            $errors['email'][$emailErrorNum] = 'Please enter an email address';
+            $errors['email'][$emailErrorNum] = "Please enter an email address\n";
             $emailErrorNum++;
         }
         if (!filter_var($post['email'], FILTER_VALIDATE_EMAIL)) {
@@ -136,7 +136,7 @@
 
         // propertyType rules
         if (empty($post['propertyType'])) {
-            $errors['propertyType'][$propertyErrorNum] = 'Please select an Property Type';
+            $errors['propertyType'][$propertyErrorNum] = "Please select an Property Type\n";
             $propertyErrorNum++;
         }
         if (preg_match('/[^a-zA-Z]/',$post['propertyType'])) {
@@ -146,7 +146,7 @@
         
         // message rules
         if (empty($post['message'])) {
-            $errors['message'][$messageErrorNum] = 'Please enter a message';
+            $errors['message'][$messageErrorNum] = "Please enter a message\n";
             $messageErrorNum++;
         }
         if (empty($errors)) {
@@ -173,7 +173,7 @@
         
         // first name rules
         if (empty($post['firstname'])) {
-            $errors['fname'][$fnameErrorNum] = 'Please enter a first name';
+            $errors['fname'][$fnameErrorNum] = "Please enter a first name\n";
             $fnameErrorNum++;
         } 
         if (preg_match('/[^a-zA-Z\s]/',$post['firstname'])) {
@@ -183,7 +183,7 @@
 
         // last name rules
         if (empty($post['lastname'])) {
-            $errors['lname'][$lnameErrorNum] = 'Please enter a last name';
+            $errors['lname'][$lnameErrorNum] = "Please enter a last name\n";
             $lnameErrorNum++;
         }
         if (preg_match('/[^a-zA-Z\s]/',$post['lastname'])) {
@@ -193,7 +193,7 @@
         
         // phone rules
         if (empty($post['phone'])) {
-            $errors['phone'][$phoneErrorNum] = 'Please enter a phone number';
+            $errors['phone'][$phoneErrorNum] = "Please enter a phone number\n";
             $phoneErrorNum++;
         }
         if (preg_match('/[^\d]/',$post['phone'])) {
@@ -203,7 +203,7 @@
 
         // email rules
         if (empty($post['email'])) {
-            $errors['email'][$emailErrorNum] = 'Please enter an email address';
+            $errors['email'][$emailErrorNum] = "Please enter an email address\n";
             $emailErrorNum++;
         }
         if (!filter_var($post['email'], FILTER_VALIDATE_EMAIL)) {
@@ -213,7 +213,7 @@
 
         // address1 rules
         if (empty($post['address1'])) {
-            $errors['addr1'][$addr1ErrorNum] = 'Please enter an address';
+            $errors['addr1'][$addr1ErrorNum] = "Please enter an address\n";
             $addr1ErrorNum++;
         }
         if (preg_match('/[^a-zA-Z\d\s\.]/',$post['address1'])) {
@@ -231,7 +231,7 @@
 
         // city rules
         if (empty($post['city'])) {
-            $errors['city'][$cityErrorNum] = 'Please enter an city';
+            $errors['city'][$cityErrorNum] = "Please enter an city\n";
             $cityErrorNum++;
         }
         if (preg_match('/[^\d\sa-zA-Z\.]/',$post['city'])) {
@@ -241,7 +241,7 @@
         
         // state rules
         if (empty($post['state'])) {
-            $errors['state'][$stateErrorNum] = 'Please select an state';
+            $errors['state'][$stateErrorNum] = "Please select an state\n";
             $stateErrorNum++;
         }
         if (preg_match('/[^a-zA-Z]/',$post['state'])) {
@@ -251,7 +251,7 @@
         
         // zip rules
         if (empty($post['zip'])) {
-            $errors['zip'][$zipErrorNum] = 'Please enter an zip';
+            $errors['zip'][$zipErrorNum] = "Please enter an zip\n";
             $zipErrorNum++;
         }
         if (preg_match('/[^\d]/',$post['zip'])) {
@@ -278,11 +278,11 @@
         // file validation
         if (isset($post['resume']) && $post['resume']['size'] > 0) {
             if (!in_array($post['resume']['type'], $allowedFileTypes)) {
-                $errors['resume'][$resumeErrorNum] = 'File type not supported';
+                $errors['resume'][$resumeErrorNum] = "File type not supported\n";
                 $resumeErrorNum++;
             }
-            if ($post['resume']['size'] >= 2000000) {
-                $errors['resume'][$resumeErrorNum] = 'File size too large (Max 2Mb)';
+            if ($post['resume']['size'] >= 4000000) {
+                $errors['resume'][$resumeErrorNum] = 'File size too large (Max 4Mb)';
                 $resumeErrorNum++;
             }
         }

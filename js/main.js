@@ -38,7 +38,8 @@ $(function () {
 
     /* Click On scroll-top-btn */
     scrollButton.on('click', function () {
-        $('html,body').animate({scrollTop: 0}, 1200);
+        $('html,body').animate({
+            scrollTop: 0}, 1200);
     });
 
     /* counter */
@@ -187,17 +188,23 @@ $(function () {
 
 });
 
-
-
 $(window).on("load", function () {
 
     $('.load-wrapp').fadeOut(100);
     var urlHash = window.location.href.split("#")[1];
     if (urlHash &&  $('#' + urlHash).length ){
         $('html,body').animate({
-            scrollTop: $('#' + urlHash).offset().top
-        }, 4000);
-        console.log('#' + urlHash);
+            scrollTop: $('#' + urlHash).offset().top -60
+        }, 1000);
     }
+
+    $('.scroll').click(function () {
+        urlHash = $(this).attr('href').split('#')[1];
+        if (urlHash && $('#' + urlHash).length) {
+            $('html,body').animate({
+                scrollTop: $('#' + urlHash).offset().top -60
+            }, 1000);
+        }
+    });
 });
 

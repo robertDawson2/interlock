@@ -45,8 +45,6 @@
     <script src="https://chat.broadly.com/javascript/chat.js" async></script>
     <script>
         new WOW().init();
-        $(document).ready(function(){
-        });
         if ($(window).width() >= 768 ) {
             $('video').attr('autoplay', 'autoplay');
             var videoSecHeight = $('section.welcome-video').height();
@@ -79,15 +77,16 @@
                     contentType: false,
                     success: (function (msg) {
                         if ('success' in msg) {
-                            $('#appModal').modal('toggle');
-                            $("input").val('');
+                            $('#quote-modal').modal('toggle');
+                            $("#quote-modal input").val('');
                             $("#state").val('');
+                            $("#message").val('');
                             $('.alert-success').html('Your application has been submitted.');
                             $('.success').removeClass('d-none');
                             window.scrollTo(0, 0);
                         } else {
                             // hide all the error spans
-                            $.each($('#appForm span.error'), function () {
+                            $.each($('#quoteForm span.error'), function () {
                                 if (!$(this).hasClass('d-none')) {
                                     $(this).addClass('d-none');
                                 }
