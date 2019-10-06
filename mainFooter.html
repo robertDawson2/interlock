@@ -65,8 +65,9 @@
                 });
             }
         } else {
-            $('#interlock-video').addClass('d-none');
-            $('#interlock-still').removeclass('d-none');
+            $('.video-background').addClass('d-none');
+            $('.mobile-still').removeClass('d-none');
+
         }
 
         $('#quote-form').submit(function (e) {

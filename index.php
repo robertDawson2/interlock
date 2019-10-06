@@ -205,34 +205,36 @@
                     <span class="line p-absolute bg-orange"></span>
                 </h1>
                 <p class="title-p txt-white">From inception to completion, we build partnerships with our clients based on trust, quality work, and outstanding customer service. </p>
-                <div id="imgPreview"></div>
+                <div id="previewArea">
+                    <img title="Click to close." id="imagePreview" class="d-none" src="" alt="">
+                </div>
                 <!-- grid -->
                 <div class="owl-carousel owl-theme photo-owl-carousel">
                     <!-- gallery item -->
 
-                    <img src="images/projectsNew/fullSizePhotos/1_patriot_plaza.jpg" alt="image">
+                    <img src="images/projectsNew/1_patriot_plaza.jpg" alt="image">
 
-                    <img src="images/projectsNew/2_howard_highschool.jpg" alt="image">
+                    <img src="images/projectsNew/2_howard_highschool.jpeg" alt="image">
                     
-                    <img src="images/projectsNew/fullSizePhotos/3_christ_church_harbor_apartments_2.jpg" alt="image">
+                    <img src="images/projectsNew/3_christ_church_harbor_apartments_2.jpg" alt="image">
 
-                    <img src="images/projectsNew/deckerquadentrance.jpg" alt="image">
+                    <img src="images/projectsNew/4_decker_quad_entrance.jpg" alt="image">
                     
-                    <img src="images/projectsNew/dsc00008.jpg" alt="image">
+                    <img src="images/projectsNew/5_ud.jpg" alt="image">
                     
-                    <img src="images/projectsNew/mdhouseofdelegates1.jpg" alt="image">
+                    <img src="images/projectsNew/6_md_house_of_delegates_1.jpg" alt="image">
                     
-                    <img src="images/projectsNew/comm1.jpg" alt="image">
+                    <img src="images/projectsNew/7_ud_b.jpg" alt="image">
                     
-                    <img src="images/projectsNew/17swg.jpg" alt="image">
+                    <img src="images/projectsNew/8_17swg.jpg" alt="image">
                     
-                    <img src="images/projectsNew/9_balto_conv_ctr1.jpg" alt="image">
+                    <img src="images/projectsNew/9_balto_conv_ctr_1.jpg" alt="image">
                     
-                    <img src="images/projectsNew/HCCDragon3.jpg" alt="image">
+                    <img src="images/projectsNew/10_hcc_dragon.jpg" alt="image">
                     
-                    <img src="images/projects/WatersEdge1.jpg" alt="image">
+                    <img src="images/projectsNew/11_waters_edge.jpg" alt="image">
                     
-                    <img src="images/projectsNew/pooldeck-kelly.jpg" alt="image">
+                    <img src="images/projectsNew/12_pooldeck_kelly.jpg" alt="image">
                     
                 </div>
             </div>

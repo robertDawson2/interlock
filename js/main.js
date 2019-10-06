@@ -1,12 +1,8 @@
 $(function () {
     var screenWidth = $(window).width();
-    if (screenWidth >= 800) {
+    if (screenWidth >= 768) {
         $('.video-background').attr('autoplay', 'autoplay');
-    } else {
-        $('.video-background').addClass('d-none');
-        $('.mobile-still').removeClass('d-none');
-
-    }
+    } 
     "use strict";
     /* smooth scroll
      -------------------------------------------------------*/
@@ -195,5 +191,20 @@ $(window).on("load", function () {
         }
     });
 
+    var screenWidth = $(window).width();
+    if (screenWidth >= 768) {
+        $(".owl-item > img").each(function () {
+            var filename = $(this).attr('src').split('/');
+            $(this).click(function () {
+                $("#imagePreview").attr('src', 'images/projectsNew/fullSizePhotos/' + filename[2])
+                $("#imagePreview").removeClass('d-none')
+            })
+        });
+
+        $('#imagePreview').click(function (e) {
+            $(this).addClass('d-none');
+        });
+    }
+   
 });
 
