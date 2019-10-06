@@ -45,6 +45,7 @@
     <script src="https://chat.broadly.com/javascript/chat.js" async></script>
     <script>
         new WOW().init();
+        
         if ($(window).width() >= 768 ) {
             $('video').attr('autoplay', 'autoplay');
             var videoSecHeight = $('section.welcome-video').height();
@@ -63,6 +64,9 @@
                     checkScroll();
                 });
             }
+        } else {
+            $('#interlock-video').addClass('d-none');
+            $('#interlock-still').removeclass('d-none');
         }
 
         $('#quote-form').submit(function (e) {

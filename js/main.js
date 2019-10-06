@@ -2,6 +2,10 @@ $(function () {
     var screenWidth = $(window).width();
     if (screenWidth >= 800) {
         $('.video-background').attr('autoplay', 'autoplay');
+    } else {
+        $('.video-background').addClass('d-none');
+        $('.mobile-still').removeClass('d-none');
+
     }
     "use strict";
     /* smooth scroll
@@ -56,22 +60,6 @@ $(function () {
     });
 
 
-    /* welcome-slider slider */
-    $('.welcome-slider .owl-carousel').owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 0,
-        autoplay: true,
-        autoplayTimeout: 2800,
-        autoplayHoverPause: true,
-        smartSpeed: 650,
-        nav: true,
-        navText: [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
-        ]
-    });
-
     $('.photo-owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -84,16 +72,16 @@ $(function () {
                 items: 1,
                 nav: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-fff'></i>"
+                    "<i class='fa fa-chevron-left pr-4'></i>",
+                    "<i class='fa fa-chevron-right pl-4'></i>"
                 ]
             },
             767: {
                 items: 3,
                 nav: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-fff'></i>"
+                    "<i class='fa fa-chevron-left pr-4'></i>",
+                    "<i class='fa fa-chevron-right pl-4'></i>"
                 ]
             },
             1000: {
@@ -101,8 +89,8 @@ $(function () {
                 nav: true,
                 loop: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-fff'></i>"
+                    "<i class='fa fa-chevron-left pr-4'></i>",
+                    "<i class='fa fa-chevron-right pl-4'></i>"
                 ]
             }
         }
@@ -206,5 +194,6 @@ $(window).on("load", function () {
             }, 1000);
         }
     });
+
 });
 
