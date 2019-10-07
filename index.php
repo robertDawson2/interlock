@@ -30,10 +30,11 @@
         <!-- ==================================================
                                                       welcome-area
     ================================================== -->
-        <section class="welcome-video p-relative o-hidden width-100" data-scroll-index="1">
-            <video loop muted poster="#" class="video-background">
+        <section class="welcome-video p-relative o-hidden width-100">
+            <video loop muted poster="#" class="video-background" id="interlock-video">
                 <source src="images/projectsNew/Patriots Plaza Edited.mp4" type="video/mp4">
             </video>
+            <img src="images/projectsNew/1.jpg" class="mobile-still d-none" alt="">
             <div class="overlay-bg-50 sec-padding flex-center text-center">
                 <div class="container">
                     <div class="welcome-text">
@@ -41,6 +42,9 @@
                         <h1 class="mb-20px color-fff fw-400">Our <span class="color-orange fw-800">Commitment.</span></h1>
                         <p class="txt-white">At Interlock, we work together to ensure, maintain, and continuously improve our high
                             standards for quality and service as a leader in the architectural paving industry.</p>
+                         <div class="row text-center">
+                                <div class="col-sm-12 col-md-6 offset-md-3 alert-success text-center success d-none"></div>
+                        </div>
                         <a class="main-btn btn-1 mt-30px mr-5px ml-5px" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
                     </div>
                     <div class="modal fade" id="quote-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -56,18 +60,18 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="form-group col-sm-6">
-                                            <input type="hidden" name="quote">
+                                            <input type="hidden" name="quote" value="1">
                                             <label for="firstname">First Name <span class="color-orange">*</span></label>
                                             <span class="fname-error d-none error"></span>
-                                            <input type="text" name="firstname" id="firstName" class="form-control">
+                                            <input type="text" name="firstname" id="firstName" class="form-control text-center" tabindex="1">
                                             
                                             <label for="phone">Phone Number <span class="color-orange">*</span></label>
                                             <span class="phone-error d-none error"></span>
-                                            <input type="text" name="phone" id="phone" maxlength="10" class="form-control">
+                                            <input type="text" name="phone" id="phone" maxlength="10" class="form-control text-center" tabindex="3">
                                             
                                             <label for="propertyType">Property Type <span class="color-orange">*</span></label>
                                             <span class="propertyType-error d-none error"></span>
-                                            <select name="propertyType" class="form-control" id="propertyType">
+                                            <select name="propertyType" class="form-control text-center" id="propertyType" tabindex="5">
                                                 <option value="">Choose One</option>
                                                 <option value="residential">Residential</option>
                                                 <option value="commercial">Commercial</option>
@@ -76,15 +80,15 @@
                                         <div class="form-group col-sm-6">
                                             <label for="lastname">Last Name<span class="color-orange">*</span></label>
                                             <span class="lname-error d-none error"></span>
-                                            <input type="text" name="lastname" id="lastName" class="form-control">
+                                            <input type="text" name="lastname" id="lastName" class="form-control text-center" tabindex="2">
 
                                             <label for="email">Email Address <span class="color-orange">*</span></label>
                                             <span class="email-error d-none error"></span>
-                                            <input type="email" name="email" id="email" class="form-control">
+                                            <input type="email" name="email" id="email" class="form-control text-center" tabindex="4">
                                             
                                             <label for="message">Message <span class="color-orange">*</span></label>
                                             <span class="message-error d-none error"></span>
-                                            <textarea name="message" id="message" class="form-control" style="min-height:100px;"></textarea>
+                                            <textarea name="message" id="message" class="form-control text-center" style="min-height:100px;" tabindex="6"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -148,10 +152,10 @@
     <!-- ==================================================
                                                       about-area
     ================================================== -->
-    <section id='about' class="about-area sec-padding bg-f6f6f6" data-scroll-index="2">
+    <section id='about' class="about-area sec-padding bg-f6f6f6">
             <div class="container">
                 <h1 class="title-h p-relative">
-                    <span class="fw-200">About</span><span class="color-orange"> Interlock Paving!</span>
+                    <span class="fw-200">About</span><span class="color-orange"> Interlock Paving</span>
                     <span class="line p-absolute bg-orange"></span>
                 </h1>
                 <p class="title-p"><span class="">Interlock Paving was established in 1985. We are licensed in Maryland, Washington DC, Virginia, and Delaware.
@@ -194,43 +198,44 @@
         <!-- ==================================================
                                               work-area
 ================================================== -->
-        <section id='ourWork' class="work-area bg-333  sec-padding" data-scroll-index="3">
+        <section id='ourWork' class="work-area bg-333  sec-padding" >
             <div class="container">
                 <h1 class="title-h txt-white p-relative">
                     <span class="fw-200">Featured</span><span class="color-orange"> Projects</span>
                     <span class="line p-absolute bg-orange"></span>
                 </h1>
                 <p class="title-p txt-white">From inception to completion, we build partnerships with our clients based on trust, quality work, and outstanding customer service. </p>
-                <div id="imgPreview"></div>
+                <div id="previewArea">
+                    <img title="Click to close." id="imagePreview" class="d-none" src="" alt="">
+                </div>
                 <!-- grid -->
                 <div class="owl-carousel owl-theme photo-owl-carousel">
                     <!-- gallery item -->
 
-                    <img class="grow" src="images/projectsNew/17swg.jpg" alt="image">
+                    <img src="images/projectsNew/1_patriot_plaza.jpg" alt="image">
 
-                    <img src="images/projectsNew/balto_conv_ctr1.jpg" alt="image">
+                    <img src="images/projectsNew/2_howard_highschool.jpeg" alt="image">
                     
-                    <img src="images/projectsNew/balto_conv_ctr2.jpg" alt="image">
+                    <img src="images/projectsNew/3_christ_church_harbor_apartments_2.jpg" alt="image">
 
-                    <img src="images/projectsNew/mdhouseofdelegates1.jpg" alt="image">
-
-                    <img src="images/projectsNew/deckerquadentrance.jpg" alt="image">
-
-                    <img src="images/projectsNew/dsc00008.jpg" alt="image">
+                    <img src="images/projectsNew/4_decker_quad_entrance.jpg" alt="image">
                     
-                    <img src="images/projectsNew/dsc00016.jpg" alt="image">
+                    <img src="images/projectsNew/5_ud.jpg" alt="image">
                     
-                    <img src="images/projectsNew/dsc00032.jpg" alt="image">
+                    <img src="images/projectsNew/6_md_house_of_delegates_1.jpg" alt="image">
                     
-                    <img src="images/projectsNew/dsc00038.jpg" alt="image">
+                    <img src="images/projectsNew/7_ud_b.jpg" alt="image">
                     
-                    <img src="images/projectsNew/HCCDragon3.jpg" alt="image">
+                    <img src="images/projectsNew/8_17swg.jpg" alt="image">
                     
-                    <img src="images/projectsNew/pooldeck-kelly.jpg" alt="image">
+                    <img src="images/projectsNew/9_balto_conv_ctr_1.jpg" alt="image">
                     
-                    <img src="images/projectsNew/comm1.jpg" alt="image">
+                    <img src="images/projectsNew/10_hcc_dragon.jpg" alt="image">
                     
-                    <img src="images/projects/WatersEdge1.jpg" alt="image">
+                    <img src="images/projectsNew/11_waters_edge.jpg" alt="image">
+                    
+                    <img src="images/projectsNew/12_pooldeck_kelly.jpg" alt="image">
+                    
                 </div>
             </div>
         </section>
@@ -270,7 +275,7 @@
         <!-- ==================================================
                                                       contact-area
     ================================================== -->
-        <section id='contact' class="contact-area sec-padding bg-fff" data-scroll-index="4">
+        <section id='contact' class="contact-area sec-padding bg-fff">
             <div class="container">
 
                 <div class="row">

@@ -15,12 +15,10 @@
                 <span class="line p-absolute bg-orange"></span>
             </h1>
             <div class="row">
-                    <div class="col-sm-12 col-md-3 success d-none"></div>
                     <div class="col-sm-12 col-md-6 alert-success text-center success d-none"></div>
             </div>
             <div class="row">
-                    <div class="col-sm-12 col-md-3 error d-none"></div>
-                    <span class="col-sm-12 col-md-6 upload-error alert-danger text-center error d-none"></span>
+                    <div class="col-sm-12 col-md-6 upload-error alert-danger text-center error d-none"></div>
             </div>
             
             <div class="row mb-20px text-left">

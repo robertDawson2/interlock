@@ -178,18 +178,18 @@
                                                 Chris joined the Interlock team in 1985 as one of our first full time team members and has held multiple
                                                 positions ever since. In Chris’ current role, he serves as Interlock’s Residential Project Manager,
                                                 responsible for leading our residential sales team and the holistic delivery of our residential construction
-                                                projects. Chris ensures all of Interlock’s residential construction project are delivered on time, within
+                                                projects. Chris ensures all of Interlock’s residential construction projects are delivered on time, within
                                                 budget, and meet or exceed our customer’s exceptions.
                                             </p>
                                             <br>
                                             <p class="txt-white">
                                                 With over 35 years of experience in the architectural and interlocking paving industry, Chris is an expert
-                                                in industry standards and best practices which ensure that all of Interlock’s project, no matter the size or
+                                                in industry standards and best practices, which ensure that all of Interlock’s projects, no matter the size or
                                                 scale, meet our company values and our customers’ goals.
                                             </p>
                                             <br>
                                             <p class="txt-white">
-                                                Prior to his current roles, Chris has served has as a Crew Foreman, Production Manager, and Equipment
+                                                Prior to his current roles, Chris has served as a Crew Foreman, Production Manager, and Equipment
                                                 Operator among many other positions.
                                             </p>
                                         </div>
@@ -233,7 +233,7 @@
                                             <p class="txt-white">
                                                 Gabriel has been with Interlock since 1991, originally joining the company as a summer intern. Since
                                                 joining the company, Gabriel has continued to increase our standards for project coordination and
-                                                quality as well as training and mentoring our new employees to ensure that our entire field team
+                                                quality, as well as training and mentoring our new employees to ensure that our entire field team
                                                 understands our company’s high standards for excellence.
                                             </p>
                                         </div>

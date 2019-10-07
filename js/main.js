@@ -1,11 +1,8 @@
 $(function () {
-    $("nav .nav-item a").on('click', function () {
-        $("section[data-scroll-index=" + $(this).data('scroll-nav') + "]").removeClass('hide-on-mobile');
-    });
     var screenWidth = $(window).width();
-    if (screenWidth >= 800) {
+    if (screenWidth >= 768) {
         $('.video-background').attr('autoplay', 'autoplay');
-    }
+    } 
     "use strict";
     /* smooth scroll
      -------------------------------------------------------*/
@@ -41,7 +38,8 @@ $(function () {
 
     /* Click On scroll-top-btn */
     scrollButton.on('click', function () {
-        $('html,body').animate({scrollTop: 0}, 1200);
+        $('html,body').animate({
+            scrollTop: 0}, 1200);
     });
 
     /* counter */
@@ -58,22 +56,6 @@ $(function () {
     });
 
 
-    /* welcome-slider slider */
-    $('.welcome-slider .owl-carousel').owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 0,
-        autoplay: true,
-        autoplayTimeout: 2800,
-        autoplayHoverPause: true,
-        smartSpeed: 650,
-        nav: true,
-        navText: [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
-        ]
-    });
-
     $('.photo-owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -86,16 +68,16 @@ $(function () {
                 items: 1,
                 nav: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-fff'></i>"
+                    "<i class='fa fa-chevron-left pr-4'></i>",
+                    "<i class='fa fa-chevron-right pl-4'></i>"
                 ]
             },
             767: {
                 items: 3,
                 nav: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-fff'></i>"
+                    "<i class='fa fa-chevron-left pr-4'></i>",
+                    "<i class='fa fa-chevron-right pl-4'></i>"
                 ]
             },
             1000: {
@@ -103,8 +85,8 @@ $(function () {
                 nav: true,
                 loop: true,
                 navText: [
-                    "<i class='fa fa-chevron-left color-fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>",
-                    "<i class='fa fa-chevron-right color-fff'></i>"
+                    "<i class='fa fa-chevron-left pr-4'></i>",
+                    "<i class='fa fa-chevron-right pl-4'></i>"
                 ]
             }
         }
@@ -190,14 +172,13 @@ $(function () {
 
 });
 
-
-
 $(window).on("load", function () {
 
     $('.load-wrapp').fadeOut(100);
     var urlHash = window.location.href.split("#")[1];
     if (urlHash &&  $('#' + urlHash).length ){
         $('html,body').animate({
+<<<<<<< HEAD
             scrollTop: $('#' + urlHash).offset().top - 60
         }, 1000);
     }
@@ -212,4 +193,34 @@ $(window).on("load", function () {
     });
 });
 $(document).ready(function(){
+=======
+            scrollTop: $('#' + urlHash).offset().top -60
+        }, 1000);
+    }
+
+    $('.scroll').click(function () {
+        urlHash = $(this).attr('href').split('#')[1];
+        if (urlHash && $('#' + urlHash).length) {
+            $('html,body').animate({
+                scrollTop: $('#' + urlHash).offset().top -60
+            }, 1000);
+        }
+    });
+
+    var screenWidth = $(window).width();
+    if (screenWidth >= 768) {
+        $(".owl-item > img").each(function () {
+            var filename = $(this).attr('src').split('/');
+            $(this).click(function () {
+                $("#imagePreview").attr('src', 'images/projectsNew/fullSizePhotos/' + filename[2])
+                $("#imagePreview").removeClass('d-none')
+            })
+        });
+
+        $('#imagePreview').click(function (e) {
+            $(this).addClass('d-none');
+        });
+    }
+   
+>>>>>>> 9dc0b35fedc3d68ff3cccebfce0f845540859455
 });
