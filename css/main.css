@@ -749,11 +749,9 @@ h6{
 /**** welcome-video ****/
 .welcome-video{
     height: 100vh;
-    width: 100%;
-    background-color: #000; 
-    z-index:-101;
 }
 .welcome-video .overlay-bg-50{
+    position: absolute;
     height: 100vh;
 }
 
@@ -762,8 +760,7 @@ h6{
     left: 0;
     top: 0;
     width: 100%;
-    /*height: 100vh;*/
-    z-index: -100;
+    height: 100vh;
 }
 .welcome-video .mobile-still{
     position: absolute;
@@ -771,7 +768,6 @@ h6{
     top: 0;
     width: 100%;
     height: 100vh;
-    z-index: -100;
 }
 
 .welcome-video .welcome-text p{
@@ -871,8 +867,6 @@ h6{
     transform:scale(1.2);
 }
 
-#ourWork #previewArea{
-}
 #ourWork #imagePreview{
     height:80vh;
     overflow-y: scroll;

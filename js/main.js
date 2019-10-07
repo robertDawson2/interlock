@@ -196,9 +196,18 @@ $(window).on("load", function () {
         $(".owl-item > img").each(function () {
             var filename = $(this).attr('src').split('/');
             $(this).click(function () {
-                $("#imagePreview").attr('src', 'images/projectsNew/fullSizePhotos/' + filename[2])
-                $("#imagePreview").removeClass('d-none')
+                $("#imagePreview").attr('src', 'images/projectsNew/fullSizePhotos/' + filename[2]);
+                $("#imagePreview").removeClass('d-none');
+                $('html, body').animate({
+                    scrollTop: $('#imagePreview').offset().top - 40
+                }, 1000);
             })
+        });
+
+        $('#imagePreview').click(function(){
+            $('html, body').animate({
+                scrollTop: $('#ourWork').offset().top - 60
+            }, 1000);
         });
 
         $('#imagePreview').click(function (e) {

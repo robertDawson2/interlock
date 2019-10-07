@@ -45,7 +45,7 @@
                          <div class="row text-center">
                                 <div class="col-sm-12 col-md-6 offset-md-3 alert-success text-center success d-none"></div>
                         </div>
-                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
+                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px" id="quote-btn" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
                     </div>
                     <div class="modal fade" id="quote-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" style="min-width:60%;" role="document">
@@ -62,14 +62,17 @@
                                         <div class="form-group col-sm-6">
                                             <input type="hidden" name="quote" value="1">
                                             <label for="firstname">First Name <span class="color-orange">*</span></label>
+                                            <br>
                                             <span class="fname-error d-none error"></span>
                                             <input type="text" name="firstname" id="firstName" class="form-control text-center" tabindex="1">
                                             
                                             <label for="phone">Phone Number <span class="color-orange">*</span></label>
+                                            <br>
                                             <span class="phone-error d-none error"></span>
                                             <input type="text" name="phone" id="phone" maxlength="10" class="form-control text-center" tabindex="3">
                                             
                                             <label for="propertyType">Property Type <span class="color-orange">*</span></label>
+                                            <br>
                                             <span class="propertyType-error d-none error"></span>
                                             <select name="propertyType" class="form-control text-center" id="propertyType" tabindex="5">
                                                 <option value="">Choose One</option>
@@ -79,14 +82,17 @@
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <label for="lastname">Last Name<span class="color-orange">*</span></label>
+                                            <br>
                                             <span class="lname-error d-none error"></span>
                                             <input type="text" name="lastname" id="lastName" class="form-control text-center" tabindex="2">
 
                                             <label for="email">Email Address <span class="color-orange">*</span></label>
+                                            <br>
                                             <span class="email-error d-none error"></span>
                                             <input type="email" name="email" id="email" class="form-control text-center" tabindex="4">
                                             
                                             <label for="message">Message <span class="color-orange">*</span></label>
+                                            <br>
                                             <span class="message-error d-none error"></span>
                                             <textarea name="message" id="message" class="form-control text-center" style="min-height:100px;" tabindex="6"></textarea>
                                         </div>
@@ -206,7 +212,7 @@
                 </h1>
                 <p class="title-p txt-white">From inception to completion, we build partnerships with our clients based on trust, quality work, and outstanding customer service. </p>
                 <div id="previewArea">
-                    <img title="Click to close." id="imagePreview" class="d-none" src="" alt="">
+                    <img title="Click to close" id="imagePreview" class="d-none" src="" alt="">
                 </div>
                 <!-- grid -->
                 <div class="owl-carousel owl-theme photo-owl-carousel">
