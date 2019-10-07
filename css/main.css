@@ -748,19 +748,23 @@ h6{
 
 /**** welcome-video ****/
 .welcome-video{
+    background-color: #000;
     height: 100vh;
+    width: 100%;
 }
 .welcome-video .overlay-bg-50{
     position: absolute;
     height: 100vh;
+    width: 100%;
 }
 
 .welcome-video .video-background{
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100vh;
+    width:100%;
+    /*height: 100vh;*/
+    object-fit: fill;
 }
 .welcome-video .mobile-still{
     position: absolute;
@@ -784,6 +788,12 @@ h6{
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat
+}
+
+#mail-success, #mail-error{
+    height: 50px;
+    border-radius: 6px;
+    line-height: 47px;
 }
 
 .container{

@@ -90,6 +90,10 @@
                         $('.alert-success').html('Your application has been submitted.');
                         $('.success').removeClass('d-none');
                         window.scrollTo(0,0);
+                    } else if ('error' in msg) {
+                        $('.alert-danger').html(msg['error']);
+                        $('.alert-danger').removeClass('d-none');
+                        $('#appModal').modal('toggle');
                     } else {
                         // hide all the error spans
                         $.each($('#appForm span.error'), function() {

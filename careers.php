@@ -15,12 +15,9 @@
                 <span class="line p-absolute bg-orange"></span>
             </h1>
             <div class="row">
-                    <div class="col-sm-12 col-md-6 alert-success text-center success d-none"></div>
+                    <div id="mail-success" class="col-sm-12 col-md-6 offset-md-3 alert-success text-center success d-none"></div>
+                    <div id="mail-error" class="col-sm-12 col-md-6 offset-md-3 upload-error alert-danger text-center error d-none"></div>
             </div>
-            <div class="row">
-                    <div class="col-sm-12 col-md-6 upload-error alert-danger text-center error d-none"></div>
-            </div>
-            
             <div class="row mb-20px text-left">
                 
                 <div class="col-sm-12 col-md-5">

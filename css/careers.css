@@ -19,3 +19,9 @@
     border-color: #af0011;
     box-shadow: none;
 }
+
+#careers #mail-success, #careers #mail-error{
+    height: 50px;
+    border-radius: 6px;
+    line-height: 46px;
+}

@@ -17,10 +17,14 @@
                 $load = new Load;
                 $body = $load->view('emailTemplates/quoteEmail.php',$post, true);
                 //send email
-                sendMail('info@interlock.com','New Quote Request',$body, null, 'cturner@interlock.com');
+                $mailError = sendMail('info@interlock.com','New Quote Request',$body, null, 'cturner@interlock.com');
                 //clear form
                 $_POST = array();
-                echo json_encode(array('success' => 'sent'));
+                if (empty($mailError)) {
+                    echo json_encode(array('success' => 'sent'));
+                } else {
+                    echo json_encode($mailError);
+                }
             } else {
                 echo json_encode($errors);
             }
@@ -72,10 +76,14 @@
                 $load = new Load;
                 $body = $load->view('emailTemplates/applicationEmail.php',$post, true);
                 //send email
-                sendMail('careers@interlock.com','New Application',$body,$destination);
+                $mailError = sendMail('careers@interlock.com','New Application',$body,$destination);
                 //clear form
                 $_POST = array();
-                echo json_encode(array('success' => 'sent'));
+                if (empty($mailError)) {
+                    echo json_encode(array('success' => 'sent'));
+                } else {
+                    echo json_encode($mailError);
+                }
             } else {
                 echo json_encode($errors);
             }
@@ -340,10 +348,10 @@
             //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
             $mail->send();
+            return array();
                 //echo 'Message has been sent';
                 //header('Location: ../index.php');
         } catch (Exception $e) {
-            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-                die;
+            return array('error' =>'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo);
         }
     }
