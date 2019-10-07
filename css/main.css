@@ -631,6 +631,7 @@ h6{
 .navbar .navbar-brand .w-logo{
     display: block;
     height: 50px;
+    cursor: pointer;
 }
 
 .navbar .navbar-brand .b-logo{

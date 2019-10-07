@@ -41,6 +41,11 @@ $(function () {
         $('html,body').animate({
             scrollTop: 0}, 1200);
     });
+    /* Click On scroll-top-btn */
+    $('.navbar-brand').on('click', function () {
+        $('html,body').animate({
+            scrollTop: 0}, 1200);
+    });
 
     /* counter */
     $('.count').counterUp({
