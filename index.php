@@ -155,7 +155,7 @@
     <section id='about' class="about-area sec-padding bg-f6f6f6">
             <div class="container">
                 <h1 class="title-h p-relative">
-                    <span class="fw-200">About</span><span class="color-orange"> Interlock Paving!</span>
+                    <span class="fw-200">About</span><span class="color-orange"> Interlock Paving</span>
                     <span class="line p-absolute bg-orange"></span>
                 </h1>
                 <p class="title-p"><span class="">Interlock Paving was established in 1985. We are licensed in Maryland, Washington DC, Virginia, and Delaware.
