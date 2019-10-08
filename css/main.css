@@ -49,6 +49,7 @@ team-area see team.css
 }
 
 body {
+    max-width:100%;
     /*background:black;*/
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -680,6 +681,9 @@ h6{
     z-index: 999;
     padding: 10px 0;
     background: black;
+}
+.navbar-default{
+  max-width:100%;
 }
 
 .navbar .navbar-brand .w-logo{

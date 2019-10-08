@@ -197,8 +197,8 @@ $(window).on("load", function () {
         }
     });
 
-    var screenWidth = $(window).width();
-    if (screenWidth >= 768) {
+    
+    if ($(document).width >= 768) {
         $(".owl-item > img").each(function () {
             //var filename = $(this).attr('src').split('/');
             $(this).click(function () {
