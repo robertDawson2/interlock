@@ -43,8 +43,16 @@
                         <p class="txt-white">At Interlock, we work together to ensure, maintain, and continuously improve our high
                             standards for quality and service as a leader in the architectural paving industry.</p>
                          <div class="row text-center">
-                             <div id="mail-success" class="col-sm-12 col-md-6 offset-md-3 alert-success text-center success d-none"></div>
-                             <div id="mail-error" class="col-sm-12 col-md-6 offset-md-3 alert-danger text-center error d-none"></div>
+                            <div id="mail-success" class="col-sm-12 col-md-6 offset-md-3 alert-success text-center success d-none">
+                                <button type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div id="mail-error" class="col-sm-12 col-md-6 offset-md-3 alert-danger text-center error d-none">
+                                <button type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                         </div>
                         <a class="main-btn btn-1 mt-30px mr-5px ml-5px" id="quote-btn" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
                     </div>
@@ -100,8 +108,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-success">Request Quote</button>
+                                    <button type="button" tabindex="7" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" tabindex="8" class="btn btn-success">Request Quote</button>
                                 </div>
                                 </form>
                             </div>

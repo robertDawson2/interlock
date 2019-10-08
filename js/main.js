@@ -215,9 +215,18 @@ $(window).on("load", function () {
             }, 1000);
         });
 
-        $('#imagePreview').click(function (e) {
+        $('#imagePreview').click(function () {
             $(this).addClass('d-none');
         });
     }
    
+    $('button.close').click(function(){
+        if (!$(this).parent().hasClass('d-none')) {
+            $(this).parent().addClass('d-none');
+        }
+    });
+
+    $('#quote-modal').on('shown.bs.modal', function () {
+        $('#firstName').trigger('focus');
+    });
 });

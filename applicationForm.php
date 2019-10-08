@@ -5,10 +5,10 @@
     <form action="" method="POST" enctype="multipart/form-data" id="appForm">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 form-group">
-                        <label for="first">First Name<span class="color-orange"> *</span></label>
+                        <label for="fname">First Name<span class="color-orange"> *</span></label>
                         <span class="fname-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="fname" id="fname" tabindex="1" 
-                            value="<?php if (isset($_POST['fname'])) {echo $_POST['fname'];} ?>" required autofocus="true">
+                            value="<?php if (isset($_POST['fname'])) {echo $_POST['fname'];} ?>" required>
                         <label for="phone">Phone Number<span class="color-orange"> *</span></label>
                         <span class="phone-error d-none error"></span>
                         <input class="form-control text-center" type="tel" name="phone" maxlength="10" id="phone" tabindex="3" 

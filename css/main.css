@@ -801,6 +801,10 @@ h6{
     padding: 10px;
 }
 
+#quote-modal input:focus, #quote-modal select:focus, #quote-modal textarea:focus{
+    border-color: #af0011;
+}
+
 
 @keyframes fadeInSlider{
     0% {

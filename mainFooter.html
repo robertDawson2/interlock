@@ -85,12 +85,12 @@
                             $("#quote-modal input").val('');
                             $("#state").val('');
                             $("#message").val('');
-                            $('.alert-success').html('Your application has been submitted.');
+                            $('.alert-success').append('Your request for a quote has been sent.');
                             $('.alert-success').removeClass('d-none');
                             $('#quote-modal').modal('toggle');
                             window.scrollTo(0, 0);
                         } else if ('error' in msg) {
-                            $('.alert-danger').html(msg['error']);
+                            $('.alert-danger').append(msg['error']);
                             $('.alert-danger').removeClass('d-none');
                             $('#quote-modal').modal('toggle');
                             
