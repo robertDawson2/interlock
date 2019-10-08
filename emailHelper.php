@@ -76,7 +76,7 @@
                 $load = new Load;
                 $body = $load->view('emailTemplates/applicationEmail.php',$post, true);
                 //send email
-                $mailError = sendMail('ian@donorsearch.net','New Application',$body,$destination);
+                $mailError = sendMail('careers@interlock.com','New Application',$body,$destination);
                 //clear form
                 $_POST = array();
                 if (empty($mailError)) {
