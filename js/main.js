@@ -187,7 +187,8 @@ $(window).on("load", function () {
         }, 1000);
     }
 
-    $('.scroll').click(function () {
+    $('.scroll').click(function (e) {
+        e.preventDefault();
         urlHash = $(this).attr('href').split('#')[1];
         if (urlHash && $('#' + urlHash).length) {
             $('html,body').animate({
