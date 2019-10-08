@@ -321,7 +321,7 @@
             $mail->Host = 'asp-submit.reflexion.net';             // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'Webservice@net2sky.com';           // SMTP username
-            $mail->Password = '2019$Ws!';                         // SMTP password
+            $mail->Password = '2020$Ws!';                         // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
     
