@@ -199,24 +199,29 @@ $(window).on("load", function () {
     var screenWidth = $(window).width();
     if (screenWidth >= 768) {
         $(".owl-item > img").each(function () {
-            var filename = $(this).attr('src').split('/');
+            //var filename = $(this).attr('src').split('/');
             $(this).click(function () {
-                $("#imagePreview").attr('src', 'images/projectsNew/fullSizePhotos/' + filename[2]);
+                var previewNumber = $('#enlarged').data('number');
+                if (previewNumber > 0) {
+                    $('#enlarged').removeClass('pic-'+previewNumber);
+                }
+                var picNumber = $(this).data('number');
+                $('#enlarged').data('number', picNumber)
+                
+                $("#enlarged").addClass('pic-'+picNumber);
                 $("#imagePreview").removeClass('d-none');
+                
                 $('html, body').animate({
                     scrollTop: $('#imagePreview').offset().top - 40
                 }, 1000);
             })
         });
 
-        $('#imagePreview').click(function(){
+        $('#enlarged').click(function(){
             $('html, body').animate({
                 scrollTop: $('#ourWork').offset().top - 60
             }, 1000);
-        });
-
-        $('#imagePreview').click(function () {
-            $(this).addClass('d-none');
+            $('#imagePreview').addClass('d-none');
         });
     }
    

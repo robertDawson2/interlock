@@ -72,6 +72,60 @@ a:focus{
 
 img{width: auto; max-width: 100%; height: auto;}
 
+#ourWork #imagePreview{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ourWork #enlarged{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    z-index:999;
+}
+#ourWork .pic-1{
+    background-image: url("../images/projectsNew/fullSizePhotos/1_patriot_plaza.jpg");
+}
+#ourWork .pic-2{
+    background-image: url("../images/projectsNew/fullSizePhotos/2_howard_highschool.jpeg");
+}
+#ourWork .pic-3{
+    background-image: url("../images/projectsNew/fullSizePhotos/3_christ_church_harbor_apartments_2.jpg");
+}
+#ourWork .pic-4{
+    background-image: url("../images/projectsNew/fullSizePhotos/4_decker_quad_entrance.jpg");
+}
+#ourWork .pic-5{
+    background-image: url("../images/projectsNew/fullSizePhotos/5_ud.jpg");
+}
+#ourWork .pic-6{
+    background-image: url("../images/projectsNew/fullSizePhotos/6_md_house_of_delegates_1.jpg");
+}
+#ourWork .pic-7{
+    background-image: url("../images/projectsNew/fullSizePhotos/7_ud_b.jpg");
+}
+#ourWork .pic-8{
+    background-image: url("../images/projectsNew/fullSizePhotos/8_17swg.jpg");
+}
+#ourWork .pic-9{
+    background-image: url("../images/projectsNew/fullSizePhotos/9_balto_conv_ctr_1.jpg");
+}
+#ourWork .pic-10{
+    background-image: url("../images/projectsNew/fullSizePhotos/10_hcc_dragon.jpg");
+}
+#ourWork .pic-11{
+    background-image: url("../images/projectsNew/fullSizePhotos/11_waters_edge.jpg");
+}
+#ourWork .pic-12{
+    background-image: url("../images/projectsNew/fullSizePhotos/12_pooldeck_kelly.jpg");
+}
+
 h1{font-size: 50px; line-height: 50px;}
 h2{font-size: 40px; line-height: 45px;}
 h3{font-size: 30px; line-height: 34px;}
@@ -882,17 +936,7 @@ h6{
     transform:scale(1.2);
 }
 
-#ourWork #imagePreview{
-    max-height:50vh;
-    overflow-y: scroll;
-    z-index: 999;
-    position: relative;
-    border: 1px solid white;
-    border-radius: 6px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /***** creative-2  for creative-2 demo *****/
 .welcome-area.creative-2{

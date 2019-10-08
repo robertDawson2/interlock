@@ -306,7 +306,7 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     
-    function sendMail($to,$subject,$body,$file=null,$cc=null){
+    function sendMail($to,$subject,$body,$file=null){
     
         //ini_set('error_reporting', 1);
         include_once './PHPMailer/src/Exception.php';
@@ -326,13 +326,13 @@
             $mail->Port = 587;                                    // TCP port to connect to
     
             //Recipients
-            $mail->setFrom('Interlock@net2sky.com');
+            //$mail->setFrom('Interlock@net2sky.com');
             $mail->addAddress($to);     // Add a recipient
             //$mail->addAddress('ellen@example.com');             // Name is optional
             //$mail->addReplyTo('info@example.com', 'Information');
-            if ($cc !== null) {
-                $mail->addCC('cc@example.com');
-            }
+            //if ($cc !== null) {
+            //    $mail->addCC('cc@example.com');
+            //}
             //$mail->addBCC('bcc@example.com');
     
             //Attachments
