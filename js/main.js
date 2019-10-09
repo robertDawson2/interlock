@@ -197,14 +197,12 @@ $(window).on("load", function () {
         }
     });
 
-    console.log($(document).width())
     if ($(document).width() >= 768) {
         $(".owl-item > img").each(function () {
             //var filename = $(this).attr('src').split('/');
             $(this).click(function () {
                 var previewNumber = $('#enlarged').data('number');
                 if (previewNumber > 0) {
-                    console.log('pic-'+previewNumber)
                     $('#enlarged').removeClass('pic-'+previewNumber);
                 }
                 var picNumber = $(this).data('number');
