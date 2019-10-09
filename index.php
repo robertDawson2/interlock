@@ -309,7 +309,7 @@
                             <p class="">410-682-4942</p>
                         </div>
                         <div class="address">
-                            <p class=""><a href="mailto:consumer+5d0ba5072d34b60014b56d5d@broadly.com">info@interlockpaving.com</a></p>
+                            <p class=""><a href="mailto:info@interlock.com">info@interlockpaving.com</a></p>
                         </div>
                     </div>
                 </div>
