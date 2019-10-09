@@ -815,19 +815,21 @@ h6{
     width: 100%;
 }
 
-.welcome-video .video-background{
+.welcome-video .video-background, .welcome-video .mobile-still{
     position: absolute;
     left: 0;
     top: 0;
+    object-fit: cover;
     width:100%;
+    height: 100vh;
 }
 .welcome-video .mobile-still{
     position: absolute;
     left: 0;
     top: 0;
-    height:100vh;
     width:100%;
-    object-fit: cover;
+    height: 100vh;
+   
 }
 
 .welcome-video .welcome-text p{
