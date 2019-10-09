@@ -49,7 +49,7 @@ team-area see team.css
 }
 
 body {
-    max-width:100%;
+    width:100%;
     /*background:black;*/
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -679,7 +679,6 @@ h6{
     top: 30px;
     width: 100%;
     z-index: 999;
-    padding: 10px 0;
     background: black;
 }
 .navbar-default{
@@ -809,7 +808,6 @@ h6{
 .welcome-video{
     background-color: #000;
     height: 100vh;
-    width: 100%;
 }
 .welcome-video .overlay-bg-50{
     position: absolute;
@@ -822,15 +820,14 @@ h6{
     left: 0;
     top: 0;
     width:100%;
-    height: 100vh;
-    object-fit: fill;
 }
 .welcome-video .mobile-still{
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100vh;
+    height:100vh;
+    width:100%;
+    object-fit: cover;
 }
 
 .welcome-video .welcome-text p{
