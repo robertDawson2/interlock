@@ -80,10 +80,6 @@
 	h5{font-size: 18px; line-height: 21px;}
 	h6{font-size: 15px; line-height: 18px;}
 	
-	.navbar{
-		height:100px;
-	}
-	
 	.navbar-collapse{background-color: #fff; margin-top: 10px;}
 	
 	.navbar .navbar-nav .nav-link{color: #333; text-align: center;}
@@ -173,7 +169,6 @@
 	
 	.navbar{
 		top: 20px;
-		height:100px;
     }
 	
 	.content{
