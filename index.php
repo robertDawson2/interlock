@@ -47,11 +47,13 @@
                                 <button type="button" class="close" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
+                                <div class="mail-success-msg"></div>
                             </div>
                             <div id="mail-error" class="col-sm-12 col-md-6 offset-md-3 alert-danger text-center error d-none">
                                 <button type="button" class="close" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
+                                <div class="mail-error-msg"></div>
                             </div>
                         </div>
                         <a class="main-btn btn-1 mt-30px mr-5px ml-5px" id="quote-btn" data-toggle="modal" data-target="#quote-modal">Get a quote</a>

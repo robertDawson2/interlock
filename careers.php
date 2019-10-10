@@ -15,16 +15,18 @@
                 <span class="line p-absolute bg-orange"></span>
             </h1>
             <div class="row">
-                    <div id="mail-success" class="col-sm-12 col-md-6 offset-md-3 alert-success text-center success d-none">
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div id="mail-error" class="col-sm-12 col-md-6 offset-md-3 upload-error alert-danger text-center error d-none">
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
+                <div id="mail-success" class="col-sm-12 col-md-6 offset-md-3 alert-success text-center success d-none">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="mail-success-msg"></div>
+                </div>
+                <div id="mail-error" class="col-sm-12 col-md-6 offset-md-3 alert-danger text-center error d-none">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="mail-error-msg"></div>
+                </div>
             </div>
             <div class="row mb-20px text-left">
                 

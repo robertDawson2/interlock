@@ -91,11 +91,13 @@
                         $('#appModal').modal('toggle');
                         $("input").val('');
                         $("#state").val('');
-                        $('.alert-success').html('Your application has been submitted.');
+                        $('.mail-success-msg').empty()
+                        $('.mail-success-msg').append('Your application has been submitted.');
                         $('.success').removeClass('d-none');
                         window.scrollTo(0,0);
                     } else if ('error' in msg) {
-                        $('.alert-danger').html(msg['error']);
+                        $('.mail-error-msg').empty();
+                        $('.mail-error-msg').append(msg['error']);
                         $('.alert-danger').removeClass('d-none');
                         $('#appModal').modal('toggle');
                     } else {

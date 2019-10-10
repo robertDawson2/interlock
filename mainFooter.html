@@ -85,12 +85,14 @@
                             $("#quote-modal input").val('');
                             $("#state").val('');
                             $("#message").val('');
-                            $('.alert-success').append('Your request for a quote has been sent.');
+                            $('.mail-success-msg').empty()
+                            $('.mail-success-msg').append('Your request for a quote has been sent.');
                             $('.alert-success').removeClass('d-none');
                             $('#quote-modal').modal('toggle');
                             window.scrollTo(0, 0);
                         } else if ('error' in msg) {
-                            $('.alert-danger').append(msg['error']);
+                            $('.mail-error-msg').empty();
+                            $('.mail-error-msg').append(msg['error']);
                             $('.alert-danger').removeClass('d-none');
                             $('#quote-modal').modal('toggle');
                             

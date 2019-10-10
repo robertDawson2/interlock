@@ -306,7 +306,7 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     
-    function sendMail($to,$subject,$body,$file=null){
+    function sendMail($to,$subject,$body,$file=null,$cc=null){
     
         //ini_set('error_reporting', 1);
         include_once './PHPMailer/src/Exception.php';
@@ -318,21 +318,21 @@
             //Server settings
             $mail->SMTPDebug = 0;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'asp-submit.reflexion.net';             // Specify main and backup SMTP servers
+            $mail->Host = 'smtp.com';             // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'Webservice@net2sky.com';           // SMTP username
-            $mail->Password = '2020$Ws!';                         // SMTP password
+            $mail->Username = 'select@net2sky.com';           // SMTP username
+            $mail->Password = 'JTH!bqDrM#8TPKdVoU';                         // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-            $mail->Port = 587;                                    // TCP port to connect to
+            $mail->Port = 2525;                                    // TCP port to connect to
     
             //Recipients
-            //$mail->setFrom('Interlock@net2sky.com');
+            $mail->setFrom('Interlock@net2sky.com');
             $mail->addAddress($to);     // Add a recipient
             //$mail->addAddress('ellen@example.com');             // Name is optional
             //$mail->addReplyTo('info@example.com', 'Information');
-            //if ($cc !== null) {
-            //    $mail->addCC('cc@example.com');
-            //}
+            if ($cc !== null) {
+                $mail->addCC($cc);
+            }
             //$mail->addBCC('bcc@example.com');
     
             //Attachments
