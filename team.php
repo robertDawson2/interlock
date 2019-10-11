@@ -2,7 +2,7 @@
                                                   contact info & navbar
     ================================================== -->
     <?php
-        include_once './header.html';
+        include_once './includes/header.html';
     ?>
     <!-- ==================================================
                                                       End navbar
@@ -255,7 +255,7 @@
                                                       footer-area
     ================================================== -->
     <?php
-            include_once './footer.html';
+            include_once './includes/footer.html';
         ?>
         <!-- ==================================================
                                                       End footer-area

@@ -321,12 +321,12 @@
             $mail->Host = 'asp-submit.reflexion.net';             // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'interlock@net2sky.com';           // SMTP username
-            $mail->Password = 'Sun20$20!Net';                         // SMTP password
+            $mail->Password = '';                         // SMTP password
             $mail->SMTPSecure = 'tsl';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
     
             //Recipients
-            //$mail->setFrom('interlock@net2sky.com');
+            $mail->setFrom('interlock@net2sky.com');
             $mail->addAddress($to);     // Add a recipient
             //$mail->addAddress('ellen@example.com');             // Name is optional
             //$mail->addReplyTo('info@example.com', 'Information');
