@@ -76,12 +76,26 @@
                                             <br>
                                             <span class="fname-error d-none error"></span>
                                             <input type="text" name="firstname" id="firstName" class="form-control text-center" tabindex="1">
-                                            
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label for="lastname">Last Name<span class="color-orange">*</span></label>
+                                            <br>
+                                            <span class="lname-error d-none error"></span>
+                                            <input type="text" name="lastname" id="lastName" class="form-control text-center" tabindex="2">
+                                        </div>
+                                        <div class="form-group col-sm-6">
                                             <label for="phone">Phone Number <span class="color-orange">*</span></label>
                                             <br>
                                             <span class="phone-error d-none error"></span>
                                             <input type="text" name="phone" id="phone" maxlength="10" class="form-control text-center" tabindex="3">
-                                            
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label for="email">Email Address <span class="color-orange">*</span></label>
+                                            <br>
+                                            <span class="email-error d-none error"></span>
+                                            <input type="email" name="email" id="email" class="form-control text-center" tabindex="4">
+                                        </div>
+                                        <div class="form-group col-sm-6">
                                             <label for="propertyType">Property Type <span class="color-orange">*</span></label>
                                             <br>
                                             <span class="propertyType-error d-none error"></span>
@@ -92,16 +106,6 @@
                                             </select>
                                         </div>
                                         <div class="form-group col-sm-6">
-                                            <label for="lastname">Last Name<span class="color-orange">*</span></label>
-                                            <br>
-                                            <span class="lname-error d-none error"></span>
-                                            <input type="text" name="lastname" id="lastName" class="form-control text-center" tabindex="2">
-
-                                            <label for="email">Email Address <span class="color-orange">*</span></label>
-                                            <br>
-                                            <span class="email-error d-none error"></span>
-                                            <input type="email" name="email" id="email" class="form-control text-center" tabindex="4">
-                                            
                                             <label for="message">Message <span class="color-orange">*</span></label>
                                             <br>
                                             <span class="message-error d-none error"></span>

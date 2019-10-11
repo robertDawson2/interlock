@@ -9,31 +9,39 @@
                         <span class="fname-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="fname" id="fname" tabindex="1" 
                             value="<?php if (isset($_POST['fname'])) {echo $_POST['fname'];} ?>" required>
-                        <label for="phone">Phone Number<span class="color-orange"> *</span></label>
-                        <span class="phone-error d-none error"></span>
-                        <input class="form-control text-center" type="tel" name="phone" maxlength="10" id="phone" tabindex="3" 
-                            value="<?php if (isset($_POST['phone'])) {echo $_POST['phone'];} ?>" required>
-                        <label for="addr1">Address 1<span class="color-orange"> *</span></label>
-                        <span class="addr1-error d-none error"></span>
-                        <input class="form-control text-center" type="text" name="addr1" id="addr1" tabindex="5" 
-                            value="<?php if (isset($_POST['addr1'])) {echo $_POST['addr1'];} ?>" required>
                     </div>
                     <div class="col-sm-12 col-md-6 form-group">
                         <label for="lname">Last Name<span class="color-orange"> *</span></label>
                         <span class="lname-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="lname" id="lname" tabindex="2" 
                             value="<?php if (isset($_POST['lname'])) {echo $_POST['lname'];} ?>" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6 form-group">
+                        <label for="phone">Phone Number<span class="color-orange"> *</span></label>
+                        <span class="phone-error d-none error"></span>
+                        <input class="form-control text-center" type="tel" name="phone" maxlength="10" id="phone" tabindex="3" 
+                            value="<?php if (isset($_POST['phone'])) {echo $_POST['phone'];} ?>" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6 form-group">
                         <label for="email">Email Address<span class="color-orange"> *</span></label>
                         <span class="email-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="email" id="email" tabindex="4" 
                             value="<?php if (isset($_POST['email'])) {echo $_POST['email'];} ?>" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6 form-group">
+                        <label for="addr1">Address 1<span class="color-orange"> *</span></label>
+                        <span class="addr1-error d-none error"></span>
+                        <input class="form-control text-center" type="text" name="addr1" id="addr1" tabindex="5" 
+                            value="<?php if (isset($_POST['addr1'])) {echo $_POST['addr1'];} ?>" required>
+                    </div>
+                    
+                    
+                    <div class="col-sm-12 col-md-6 form-group">
                         <label for="addr2">Address 2</label>
                         <span class="addr2-error d-none error"></span>
                         <input class="form-control text-center" type="text" name="addr2" id="addr2" tabindex="6"
                             value="<?php if (isset($_POST['addr2'])) {echo $_POST['addr2'];} ?>" >
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <label for="city">City<span class="color-orange"> *</span></label>
                         <span class="city-error d-none error"></span>

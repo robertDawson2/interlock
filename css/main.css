@@ -834,7 +834,6 @@ End navbar
 
 
 #mail-success, #mail-error{
-    height: 50px;
     border-radius: 6px;
     line-height: 47px;
 }
