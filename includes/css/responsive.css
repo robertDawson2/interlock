@@ -1,0 +1,201 @@
+/* Extra large devices (large desktops, 992px and up)  */
+@media (min-width: 992px){
+	.container{max-width: 85%;}
+	
+	.title-p{margin: 0 0 70px 0;}
+
+	.left-job-spacer{
+		border-right: 1px solid #af0011;
+	}
+
+	#careers p {
+		min-height:350px
+	}
+
+	.line-hr{
+		display:none;
+	}
+	
+}
+
+/* Large devices (desktops, 991px and less)  */
+@media (max-width: 991px) {	
+	
+	/**** navbar-center-logo ****/
+	.navbar-center-logo .navbar-brand{
+		position: relative;
+		left: 0;
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	
+	.navbar-center-logo .navbar-collapse{background-color: #fff; margin-top: 10px;}
+	
+	.navbar-center-logo .navbar-nav .nav-link{color: #333; text-align: center;}
+
+	#careers{
+        margin-top:110px;
+	}
+
+	#careers p {
+		min-height:400px;
+	}
+	
+	.left-job-spacer{
+		border-right: 1px solid #af0011;
+	}
+	
+	#testimonials{
+        margin-top:100px;
+	}
+	
+	.navbar.atTop {
+		background:black;
+		}
+		
+		.navbar-brand{
+			margin-right:0 !important;
+		}
+
+	.content{margin-top:135px;}
+	.welcome-text{
+		margin-top: 0;
+	}
+
+	.line-hr{
+		display:none;
+	}
+	
+}
+
+/* Medium devices (tablets, 768px and down)  */
+@media (max-width: 767px) {
+	
+	.title-p{margin: 0 25% 70px 0;}
+	
+	h1{font-size: 42px; line-height: 42px;}
+	h2{font-size: 33px; line-height: 33px;}
+	h3{font-size: 25px; line-height: 26px;}
+	h4{font-size: 22px; line-height: 24px;}
+	h5{font-size: 18px; line-height: 21px;}
+	h6{font-size: 15px; line-height: 18px;}
+	
+	.navbar-collapse{background-color: #fff; margin-top: 10px;}
+	
+	.navbar .navbar-nav .nav-link{color: #333; text-align: center;}
+	
+	.welcome-area .welcome-text p,
+	.welcome-video .welcome-text p,
+	.welcome-particles .welcome-text p{margin: 0 10%;}
+	
+	.image-back-right,
+	.image-back-left{
+		position: relative; 
+		top: 0; 
+		left: 0; 
+		height: 400px;
+	}
+	
+	.text-box{padding: 80px 30px;}
+	
+	.why-area .why-dots .dot:after{content: none;}
+	
+	.testimonials .single-review p{
+		line-height: 1.5em;
+		margin: 0 10%;
+	}
+	
+	#careers{
+		padding-left:20px;
+        padding-right:20px;
+	}
+
+	#careers p{
+		min-height:200px;
+	}
+
+	.left-job-spacer{
+		border-right: 1px solid #af0011;
+	}
+
+	#always-contact .contact {
+		font-size: 90%;
+        padding: 0 5px;
+    }
+    #always-contact {
+		text-align: center;
+        padding: 5px;
+    }
+    .hide-on-mobile {
+		display: none;
+	}
+	
+	.content{
+		margin-top:125px;
+	}
+
+	.line-hr{
+		display:block;
+		background:#af0011;
+	}
+
+	#ourWork .owl-carousel .owl-item {
+    padding: 65px !important;
+}
+	
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+	
+	.welcome-area.creative-2{
+		-webkit-clip-path:polygon(50% 0, 100% 0, 100% 91%, 73% 100%, 0 91%, 0 0);
+		clip-path:polygon(50% 0, 100% 0, 100% 91%, 73% 100%, 0 91%, 0 0);
+	}
+	
+	.welcome-area.creative-3{
+		-webkit-clip-path:polygon(50% 0, 100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
+		clip-path:polygon(50% 0, 100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
+	}
+	
+	.welcome-area.creative-4{
+		-webkit-clip-path: polygon(100% 0, 100% 98%, 75% 93%, 50% 98%, 25% 93%, 0 98%, 0 0);
+		clip-path: polygon(100% 0, 100% 98%, 75% 93%, 50% 98%, 25% 93%, 0 98%, 0 0);
+	}
+	
+	.navbar-brand{
+		margin-left:25px;
+	}
+	
+	.navbar{
+		top: 20px;
+    }
+	
+	.content{
+		margin-top:100px;
+	}
+}
+
+
+
+@media (max-width: 434px) { 
+	.btn-1{padding: 10px 18px;}
+	.btn-2{padding: 10px 18px;}
+	.btn-3{padding: 9px 17px;} 
+}
+
+/* special media for buttons */
+@media screen and (max-width: 350px) { 
+	.btn-1{padding: 10px 18px;}
+	.btn-2{padding: 10px 18px;}
+	.btn-3{padding: 9px 17px;} 
+	
+	.navbar{
+		margin-top:15px;
+	}
+
+	.content{
+		margin-top:130px;
+	}
+
+}

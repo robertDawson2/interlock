@@ -1,0 +1,40 @@
+/*----------------------------------------------------
+                                        application
+----------------------------------------------------*/
+#appForm{
+    padding:20px 20px 0 20px;
+}
+
+#appForm .modal-dialog{
+    color:#666;
+}
+
+#appForm .error{
+    font-size:smaller;
+    color:#af0011;
+}
+
+#appForm input, #appForm select{
+    background:white;
+}
+#appForm input:focus, #appForm select:focus{
+    border-color: #af0011;
+}
+
+@media (min-width: 768px) {
+    #appForm .modal-content{
+        max-height: 899px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    #appForm .modal-content{
+        max-height:300px;
+        overflow-y: auto;
+    }
+}
+
+/*----------------------------------------------------
+                                        End application
+----------------------------------------------------*/
