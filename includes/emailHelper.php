@@ -1,4 +1,5 @@
 <?php
+/*
     $emailSent = false;
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         include 'loadView.php';
@@ -89,7 +90,7 @@
             }
         }
     }
-
+*/
     function clean_input($input)
     {
         $input = trim($input);
@@ -301,19 +302,21 @@
             return $errors;
         }
     }
-
+    
+    
+    include_once './includes/PHPMailer/src/Exception.php';
+    include_once './includes/PHPMailer/src/PHPMailer.php';
+    include_once './includes/PHPMailer/src/SMTP.php';
     
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     
     function sendMail($to,$subject,$body,$file=null,$cc=null){
-    
-        //ini_set('error_reporting', 1);
-        include_once './PHPMailer/src/Exception.php';
-        include_once './PHPMailer/src/PHPMailer.php';
-        include_once './PHPMailer/src/SMTP.php';
-    
+        ini_set('error_reporting', 1);
+        
+        
         $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+        
         try {
             //Server settings
             $mail->SMTPDebug = 0;                                 // Enable verbose debug output

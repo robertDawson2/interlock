@@ -236,4 +236,49 @@ $(window).on("load", function () {
     $('#quote-modal').on('shown.bs.modal', function () {
         $('#firstName').trigger('focus');
     });
+
+    $('#quote-form').submit(function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        $.ajax({
+            method: 'post',
+            dataType: 'json',
+            url: './mailer.php',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: (function (msg) {
+                if ('success' in msg) {
+                    $("#quote-modal input").val('');
+                    $("#state").val('');
+                    $("#message").val('');
+                    $('.mail-success-msg').empty()
+                    $('.mail-success-msg').append('Your request for a quote has been sent.');
+                    $('.alert-success').removeClass('d-none');
+                    $('#quote-modal').modal('toggle');
+                    window.scrollTo(0, 0);
+                } else if ('error' in msg) {
+                    $('.mail-error-msg').empty();
+                    $('.mail-error-msg').append(msg['error']);
+                    $('.alert-danger').removeClass('d-none');
+                    $('#quote-modal').modal('toggle');
+
+                } else {
+                    // hide all the error spans
+                    $.each($('#quoteForm span.error'), function () {
+                        if (!$(this).hasClass('d-none')) {
+                            $(this).addClass('d-none');
+                        }
+                    });
+                    // clear any old msg
+                    $('.error').html();
+                    $.each(msg, function (key, value) {
+                        // show new msg
+                        $('.' + key + '-error').removeClass('d-none').html(value);
+                    });
+
+                }
+            }),
+        });
+    });
 });

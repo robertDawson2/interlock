@@ -1,5 +1,1 @@
 Deny from all
-
-<Files ~ "emailHelper\.php$">
-  Allow from all
-</Files>
