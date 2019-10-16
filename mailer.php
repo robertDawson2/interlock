@@ -56,8 +56,7 @@
             $errors = validateApplication($post);
             $destination = null;
             if (isset($post['resume']['name']) && $post['resume']['size'] !== 0) {
-                $parentDir = realpath('../');
-                $uploadLoc = "$parentDir/uploads/applications/";
+                $uploadLoc = "var/www/html/bobbydawson/subdomains/uploads/applications/";
                 if (!file_exists($uploadLoc)) {
                     mkdir($uploadLoc, 0777, true);
                 }
