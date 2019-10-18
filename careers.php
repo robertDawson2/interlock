@@ -38,7 +38,7 @@
                         of all types such as air hammers, earth tampers, cement mixers, surveying and measuring equipment and a variety of other equipment and 
                         instruments. May clean and prepare site, dig trenches, and clear up rubble, debris and other waste materials. May assist other craft workers.
                     </p>
-                    <a class="btn appFormTrigger" data-toggle="modal" data-target="#appModal" data-position="Laborer">Apply Now</a>
+                    <a class="btn appFormTrigger d-none" data-toggle="modal" data-target="#appModal" data-position="Laborer">Apply Now</a>
                     <hr class="line-hr">
                 </div>
                 
@@ -54,7 +54,7 @@
                         must be well organized, have a keen awarness of material expenses, be knowledgable in employee safety, have a solid background in field installations, 
                         strong leadership skills, good attitude, the ability to direct the work of others, and document field conditions.
                     </p>
-                    <a class="btn appFormTrigger" data-toggle="modal" data-target="#appModal" data-position="Foreman">Apply Now</a>
+                    <a class="btn appFormTrigger d-none" data-toggle="modal" data-target="#appModal" data-position="Foreman">Apply Now</a>
                     <hr class="line-hr">
                 </div>
                 
@@ -71,7 +71,7 @@
                         equipment. The applicant must be proficient in the use of a diverse range of construction equipment, including Excavators, Loaders, Dozers, Rollers, Graders,
                         Pavers, Skid Steers and other pieces of equipment. Applicant have a good attitude, punctual, organized, and team oriented. 
                     </p>
-                    <a class="btn appFormTrigger" data-toggle="modal" data-target="#appModal" data-position="Equipment Operator">Apply Now</a>
+                    <a class="btn appFormTrigger d-none" data-toggle="modal" data-target="#appModal" data-position="Equipment Operator">Apply Now</a>
                     <hr class="line-hr">
                 </div>
                 
@@ -86,7 +86,7 @@
                         stamina. Applicant must be able to withstand long hours on the road. Must be organized and detailed oriented, and confortable working independently.
                         A clean Driving record is a must and commercial driving experience is preferred.
                     </p>
-                    <a class="btn appFormTrigger" data-toggle="modal" data-target="#appModal" data-position="CDL Driver">Apply Now</a>
+                    <a class="btn appFormTrigger d-none" data-toggle="modal" data-target="#appModal" data-position="CDL Driver">Apply Now</a>
                     <hr class="line-hr"w>
                 </div>
             </div>

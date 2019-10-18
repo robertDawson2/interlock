@@ -56,7 +56,7 @@
                                 <div class="mail-error-msg"></div>
                             </div>
                         </div>
-                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px" id="quote-btn" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
+                        <a class="main-btn btn-1 mt-30px mr-5px ml-5px d-none" id="quote-btn" data-toggle="modal" data-target="#quote-modal">Get a quote</a>
                     </div>
                     <div class="modal fade" id="quote-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" style="min-width:60%;" role="document">

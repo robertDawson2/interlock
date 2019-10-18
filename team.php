@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-xs-12 col-md-7 ">
                     <p class="team-p text-left">
-                        At Interlock, we serve, value, and honor our customers, our company and our employees  That is why we have over 30 employees with 
+                        At Interlock, we serve, value, and honor our customers, our company and our employees. That is why we have over 30 employees with 
                         more than 200 years of combined service with our team.  Interlock’s leadership team is comprised of industry experts with extensive 
                         knowledge and experience in the architectural and interlocking paving industry.  This extensive knowledge and experience in our industry 
                         allows us to listen to our customers’ goals and deliver projects that exceed their expectations without compromising quality or our 

@@ -232,8 +232,8 @@
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'asp-submit.reflexion.net';             // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'interlock@net2sky.com';           // SMTP username
-            $mail->Password = 'Fall$2020!';                         // SMTP password
+            $mail->Username = '';           // SMTP username
+            $mail->Password = '';                         // SMTP password
             $mail->SMTPSecure = 'tsl';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
     
